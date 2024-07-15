@@ -1,0 +1,38 @@
+.techfriendly-theme-wrapper {
+  // Fonts
+  --headline: 'Newake', serif;
+  --title: 'Newake', sans-serif;
+  --subtitle: 'Newake', serif;
+  --body: 'Outfit', serif;
+  --caption: 'Outfit', serif;
+
+  // Typography
+  --font-size-xs: clamp(0.9em, 0.8vw, 1em);
+  --font-size-sm: clamp(0.9em, 1vw, 1.25em);
+  --font-size-md: clamp(1.15em, 1.25vw, 1.5em);
+  --font-size-lg: clamp(1.5em, 3vw, 3em);
+  --font-size-xl: clamp(1.5em, 3vw, 3.5em);
+  --font-size-2xl: clamp(2em, 4vw, 4em);
+  --font-size-3xl: clamp(2em, 5vw, 4.5em);
+  --font-size-4xl: clamp(3.5em, 9vw, 8em);
+
+  // Colors
+  --primary-dark: #111c23;
+  --primary: #1b2934;
+  --primary-light: #283944;
+  --secondary-dark: #678193;
+  --secondary: #7894a3;
+  --secondary-light: #99b5c1;
+  --tertiary-dark: #7ebcb6;
+  --tertiary: #9ad7d2;
+  --tertiary-light: #b8e8e3;
+  --accent-dark: #f43e21;
+  --accent: #f05a39;
+  --accent-light: #ff874b;
+  --ink-dark: #101010;
+  --ink: #231f20;
+  --ink-light: #807a7a;
+  --paper-dark: #d3d0c9;
+  --paper: #e5e2db;
+  --paper-light: #ffffff;
+}

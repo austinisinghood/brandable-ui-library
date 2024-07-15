@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HTML, body */
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* No scroll */
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+// Fade in all content once theme is loaded
+.fadeIn {
+  animation: fadeIn 2s ease-out forwards;
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out-gif {
+  animation: fadeOutGif 1s ease-out forwards;
+}
+
+@keyframes fadeOutGif {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out-background {
+  animation: fadeOutBackground 1s ease-out forwards;
+}
+
+@keyframes fadeOutBackground {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.theme-transition {
+  transition: opacity 0.5s ease-out;
+}
+
+.theme-fade-out {
+  opacity: 0;
+}
+
+.theme-fade-in {
+  opacity: 1;
+}
+
+/* Code */
+code {
+  font-size: 10px !important;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #232323;
+  color: lightgreen;
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
