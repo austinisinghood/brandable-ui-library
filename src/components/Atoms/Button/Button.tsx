@@ -1,6 +1,4 @@
-'use client'
-
-import { ButtonHTMLAttributes } from 'react'
+import { FC, ButtonHTMLAttributes } from 'react'
 
 import { twMerge } from 'tailwind-merge'
 
@@ -12,14 +10,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: 'outlined' | 'solid' | 'ghost'
 }
 
-export const Button: React.FC<ButtonProps> = ({
-  children,
-  className,
-  color,
-  size,
-  variant,
-  ...rest
-}) => {
+export const Button: FC<ButtonProps> = ({ children, className, color, size, variant, ...rest }) => {
   return (
     <div className="button-wrapper">
       <button className={twMerge(`button-text`, className, size, color, variant)} {...rest}>
