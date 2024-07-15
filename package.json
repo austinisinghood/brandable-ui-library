@@ -77,11 +77,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hanker-House/brandable-ui-library"
+    "url": "https://github.com/austinisinghood/brandable-ui-library.git"
   },
   "keywords": [],
   "author": "Brandable UI",
-  "homepage": "https://github.com/Hanker-House/brandable-ui-library",
+  "homepage": "https://github.com/austinisinghood/brandable-ui-library.git",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.4.15",

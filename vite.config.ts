@@ -23,9 +23,9 @@ export default defineConfig((configEnv) => ({
   build: {
     lib: {
       entry: resolve('src', 'components/index.ts'),
-      name: 'HankerLibrary',
+      name: 'BrandableUI',
       formats: ['es', 'umd'],
-      fileName: (format) => `hanker-library.${format}.js`,
+      fileName: (format) => `brandable-ui.${format}.js`,
     },
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],

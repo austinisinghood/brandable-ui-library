@@ -1,4 +1,4 @@
-# Hanker Component Library
+# Brandable UI Component Library
 
 ## Core Technologies
 
@@ -51,4 +51,5 @@
 
 - `npm run [command]` will run the Vite build commands under the hood, check `package.json` for full details.
 - `npm run dev` to test locally
+
 # brandable-ui-library
