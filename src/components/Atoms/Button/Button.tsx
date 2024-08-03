@@ -6,17 +6,26 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode
   className?: string
   color: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
+  full?: boolean
   size: 'sm' | 'md' | 'lg'
   variant: 'outlined' | 'solid' | 'ghost'
 }
 
-export const Button: FC<ButtonProps> = ({ children, className, color, size, variant, ...rest }) => {
+export const Button: FC<ButtonProps> = ({
+  children,
+  className,
+  color,
+  full,
+  size,
+  variant,
+  ...rest
+}) => {
+  const isFullWidth = full ? 'w-full' : ''
+
   return (
-    <div className="button-wrapper">
-      <button className={twMerge(`button-text`, className, size, color, variant)} {...rest}>
-        <div className="button-container w-fit h-fit flex items-center justify-center">
-          {children}
-        </div>
+    <div className={twMerge(`button-wrapper`, className, isFullWidth)}>
+      <button className={twMerge(`button-text`, size, color, variant, isFullWidth)} {...rest}>
+        {children}
       </button>
     </div>
   )

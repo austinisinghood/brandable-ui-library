@@ -1,0 +1,27 @@
+.default-theme-wrapper {
+  .checkbox-wrapper {
+    .label {
+      display: flex;
+      color: var(--ink);
+      margin: 7.5px 0 5px 0;
+    }
+    .checkbox {
+      box-shadow: 0px 0px 0px 2px var(--accent-light);
+      font-size: 3em;
+      width: 25px;
+      height: 25px;
+      background-color: var(--paper-light);
+      margin: 0 5px 0 0;
+      border: 2px solid var(--paper-light);
+      background-clip: border-box;
+      border-radius: 6px;
+      appearance: none;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .checkbox:checked {
+      box-shadow: 0px 0px 0px 2px var(--accent);
+      background-color: var(--accent);
+    }
+  }
+}

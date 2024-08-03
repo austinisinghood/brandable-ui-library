@@ -3,7 +3,6 @@ import { Button } from '@/src/components'
 
 const meta: Meta<typeof Button> = {
   component: Button,
-  argTypes: { onClick: { action: 'clicked' } },
 }
 
 export default meta
@@ -14,6 +13,7 @@ export const Primary: Story = {
     className: '',
     children: 'Button Text',
     color: 'primary',
+    full: false,
     size: 'md',
     variant: 'solid',
   },

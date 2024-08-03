@@ -1,11 +1,11 @@
 {
   "name": "brandable-ui-library",
   "private": false,
-  "version": "0.0.07",
+  "version": "0.0.14",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && sass src/styles/index.scss dist/index.css --style=compressed",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
