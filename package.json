@@ -1,7 +1,7 @@
 {
   "name": "brandable-ui-library",
   "private": false,
-  "version": "0.0.14",
+  "version": "0.0.32",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -84,8 +84,10 @@
   "homepage": "https://github.com/austinisinghood/brandable-ui-library.git",
   "license": "MIT",
   "dependencies": {
+    "@emotion/react": "^11.13.0",
     "autoprefixer": "^10.4.15",
     "framer-motion": "^11.3.2",
+    "react-draggable": "^4.4.6",
     "react-icons": "^4.11.0",
     "sass": "^1.68.0",
     "tailwind-merge": "^1.14.0",

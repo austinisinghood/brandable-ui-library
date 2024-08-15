@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Accordion } from '@/src/components'
 
+import { FaCaretDown } from 'react-icons/fa6'
+
 const meta: Meta<typeof Accordion> = {
   component: Accordion,
 }
@@ -10,19 +12,20 @@ type Story = StoryObj<typeof Accordion>
 
 export const Default: Story = {
   args: {
-    buttonClassName: 'shout',
+    titleClassName: 'shout',
     contentClassName: 'talk',
+    icon: <FaCaretDown className="text-xl" />,
     panels: [
       {
-        button: 'Panel 1',
+        title: 'Panel 1',
         content: 'Content 1',
       },
       {
-        button: 'Panel 2',
+        title: 'Panel 2',
         content: 'Content 2',
       },
       {
-        button: 'Panel 3',
+        title: 'Panel 3',
         content: 'Content 3',
       },
     ],

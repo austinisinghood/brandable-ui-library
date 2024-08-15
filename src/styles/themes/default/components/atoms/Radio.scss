@@ -1,27 +1,26 @@
 .default-theme-wrapper {
-  .checkbox-wrapper {
-    .label {
+  .radio-input-container {
+    label {
       display: flex;
-      color: var(--ink);
-      margin: 7.5px 0 5px 0;
+      margin: 10px 15px;
     }
-    .checkbox {
-      box-shadow: 0px 0px 0px 2px var(--ink);
+    .input {
+      box-shadow: 0px 0px 0px 2px var(--accent-light);
       font-size: 3em;
       width: 25px;
       height: 25px;
+      margin-right: 7px;
       background-color: var(--paper-light);
-      margin: 0 5px 0 0;
       border: 2px solid var(--paper-light);
       background-clip: border-box;
-      border-radius: 3px;
+      border-radius: 50%;
       appearance: none;
       transition: background-color 0.3s, box-shadow 0.3s;
       cursor: pointer;
     }
-    .checkbox:checked {
-      box-shadow: 0px 0px 0px 2px var(--ink-dark);
-      background-color: var(--ink-dark);
+    .input:checked {
+      box-shadow: 0px 0px 0px 2px var(--accent);
+      background-color: var(--accent);
     }
   }
 }

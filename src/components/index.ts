@@ -1,23 +1,10 @@
 export { Accordion } from './Organisms/Accordion/Accordion'
 export { Button } from './Atoms/Button/Button'
 export { Checkbox } from './Atoms/Checkbox/Checkbox'
-
-// NEW COMPONENT BOILERPLATE:
-
-// import { FC } from 'react'
-
-// import { twMerge } from 'tailwind-merge'
-
-// interface ComponentProps {
-//   className?: string
-// }
-
-// export const Component: FC = ({ className, ...rest }: ComponentProps) => {
-//   return (
-//     <div className="component-wrapper">
-//       <div className={twMerge(`component`, className)} {...rest}>
-//         <div className="component-container">New Component</div>
-//       </div>
-//     </div>
-//   )
-// }
+export { Dropdown } from './Atoms/Dropdown/Dropdown'
+export { Input } from './Atoms/Input/Input'
+export { Radio } from './Atoms/Radio/Radio'
+export { RangeSlider } from './Atoms/RangeSlider/RangeSlider'
+export { Spinner } from './Atoms/Spinner/Spinner'
+export { Textarea } from './Atoms/Textarea/Textarea'
+export { Toggle } from './Atoms/Toggle/Toggle'
