@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Dropdown } from '@/src/components'
 
+import { FaCaretDown } from 'react-icons/fa'
+
 const meta: Meta<typeof Dropdown> = {
   component: Dropdown,
 }
@@ -11,6 +13,7 @@ type Story = StoryObj<typeof Dropdown>
 export const Primary: Story = {
   args: {
     className: 'w-fit',
+    icon: <FaCaretDown className="text-base" />,
     label: 'Test Label',
     name: 'test',
     onSelect: (option) => console.log(option),

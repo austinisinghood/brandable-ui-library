@@ -1,17 +1,18 @@
 .default-theme-wrapper {
   .radio-input-container {
-    label {
+    .label {
       display: flex;
-      margin: 10px 15px;
+      color: theme('colors.ink');
+      margin-top: 3px;
     }
     .input {
-      box-shadow: 0px 0px 0px 2px var(--accent-light);
+      box-shadow: 0px 0px 0px 2px theme('colors.ink');
       font-size: 3em;
       width: 25px;
       height: 25px;
-      margin-right: 7px;
-      background-color: var(--paper-light);
-      border: 2px solid var(--paper-light);
+      margin: 0 5px 0 0;
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
       background-clip: border-box;
       border-radius: 50%;
       appearance: none;
@@ -19,8 +20,8 @@
       cursor: pointer;
     }
     .input:checked {
-      box-shadow: 0px 0px 0px 2px var(--accent);
-      background-color: var(--accent);
+      box-shadow: 0px 0px 0px 2px theme('colors.ink-dark');
+      background-color: theme('colors.ink-dark');
     }
   }
 }

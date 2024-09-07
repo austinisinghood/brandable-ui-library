@@ -1,38 +1,42 @@
 .default-theme-wrapper {
-  // Fonts
-  --headline: 'Newake', serif;
-  --title: 'Newake', sans-serif;
-  --subtitle: 'Newake', serif;
-  --body: 'Outfit', serif;
-  --caption: 'Outfit', serif;
-
-  // Typography
-  --font-size-xs: clamp(0.9em, 0.8vw, 1em);
-  --font-size-sm: clamp(0.9em, 1vw, 1.25em);
-  --font-size-md: clamp(1.15em, 1.25vw, 1.5em);
-  --font-size-lg: clamp(1.5em, 3vw, 3em);
-  --font-size-xl: clamp(1.5em, 3vw, 3.5em);
-  --font-size-2xl: clamp(2em, 4vw, 4em);
-  --font-size-3xl: clamp(2em, 5vw, 4.5em);
-  --font-size-4xl: clamp(3.5em, 9vw, 8em);
+  // Variables
 
   // Colors
-  --primary-dark: #1c1c1c;
-  --primary: #333333;
-  --primary-light: #4d4d4d;
-  --secondary-dark: #666666;
-  --secondary: #808080;
-  --secondary-light: #999999;
-  --tertiary-dark: #a84300;
-  --tertiary: #e07b00;
-  --tertiary-light: #ffa933;
-  --accent-dark: #d6902b;
-  --accent: #f9b73f;
-  --accent-light: #fccd81;
-  --ink-dark: #2a2a2a;
-  --ink: #434343;
-  --ink-light: #6e6e6e;
-  --paper-dark: #c7beb3;
-  --paper: #fff6ec;
-  --paper-light: #ffffff;
+  --color-primary-dark: #1c1c1c;
+  --color-primary: #333333;
+  --color-primary-light: #4d4d4d;
+  --color-secondary-dark: #666666;
+  --color-secondary: #808080;
+  --color-secondary-light: #b4b4b4;
+  --color-tertiary-dark: #00041a;
+  --color-tertiary: #000849;
+  --color-tertiary-light: #0817c8;
+  --color-accent-dark: #b9dd1d;
+  --color-accent: #d6ff39;
+  --color-accent-light: #e4fc81;
+  --color-ink-dark: #2a2a2a;
+  --color-ink: #434343;
+  --color-ink-light: #6e6e6e;
+  --color-paper-dark: #ebebeb;
+  --color-paper: #f4f3f3;
+  --color-paper-light: #ffffff;
+  // Font Families
+  --font-family-headline: 'Newake', serif;
+  --font-family-title: 'Newake', sans-serif;
+  --font-family-subtitle: 'Outfit', sans-serif;
+  --font-family-body: 'Outfit', sans-serif;
+  --font-family-body: 'Outfit', sans-serif;
+  --font-family-caption: 'Outfit', sans-serif;
+  // Font Sizes
+  --font-size-xxs: clamp(0.75em, 0.5vw, 0.75em);
+  --font-size-xs: clamp(0.85em, 0.7vw, 0.9em);
+  --font-size-sm: clamp(1em, 1vw, 1.1em);
+  --font-size-base: clamp(1.125em, 1.5vw, 1.25em);
+  --font-size-lg: clamp(1.5em, 3vw, 2em);
+  --font-size-xl: clamp(1.75em, 4vw, 2.5em);
+  --font-size-2xl: clamp(2em, 5vw, 3em);
+  --font-size-3xl: clamp(2.5em, 7vw, 4em);
+  --font-size-4xl: clamp(3.5em, 9vw, 8em);
+  // Shadows
+  --card-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

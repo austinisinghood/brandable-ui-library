@@ -22,8 +22,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--ink-light);
-    border-radius: 34px;
+    background-color: theme('colors.ink-light');
+    border-radius: 6px;
     transition: 0.4s;
   }
 
@@ -34,17 +34,17 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: var(--paper-light);
-    border-radius: 50%;
+    background-color: theme('colors.paper-light');
+    border-radius: 3px;
     transition: 0.4s;
   }
 
   input:checked + .slider {
-    background-color: var(--ink-dark);
+    background-color: theme('colors.ink-dark');
   }
 
   input:checked + .slider:before {
     transform: translateX(26px);
-    background-color: var(--paper-light);
+    background-color: theme('colors.paper-light');
   }
 }

@@ -1,12 +1,11 @@
-.default-theme-wrapper {
+.techfriendly-theme-wrapper {
   .accordion-container {
-    background-color: var(--paper-light);
-    border-radius: 3px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: theme('colors.tertiary-light');
+    border-radius: 16px;
   }
 
   .accordion-panel {
-    border-bottom: 2px solid var(--ink);
+    border-bottom: 2px solid theme('colors.tertiary-dark');
   }
   .accordion-panel:last-child {
     border-bottom: none;

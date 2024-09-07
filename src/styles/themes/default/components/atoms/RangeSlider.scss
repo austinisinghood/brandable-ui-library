@@ -13,7 +13,6 @@
     border-radius: 0px;
     border: 0 none;
     cursor: grab;
-    background-color: red;
 
     &:active {
       cursor: grabbing;
@@ -21,18 +20,19 @@
   }
 
   .rangeslider-container {
-    width: 100%;
     position: relative;
+    width: 100%;
+    height: calc(#{16px} + 1.6rem);
     display: flex;
     align-items: center;
     margin: 40px calc(#{16px} / 2);
     padding-top: 1.6rem;
-    height: calc(#{16px} + 1.6rem);
+    color: theme('colors.ink');
     .rangeslider-wrapper {
-      width: calc(100% + #{16px});
-      margin: 0 calc(#{16px} / -2);
       position: absolute;
+      width: calc(100% + #{16px});
       height: 16px;
+      margin: 0 calc(#{16px} / -2);
     }
     .range-input {
       position: absolute;
@@ -69,35 +69,34 @@
       }
     }
     .range-control-wrapper {
-      width: 100%;
       position: absolute;
+      width: 100%;
       height: 16px;
       .range-rail {
         position: absolute;
-        width: 100%;
         top: 50%;
-        transform: translateY(-50%);
+        width: 100%;
         height: 6px;
+        transform: translateY(-50%);
         border-radius: 3px;
-        background: lightgrey;
+        background: theme('colors.paper-dark');
       }
       .range-inner-rail {
         position: absolute;
         height: 100%;
-        background: hotpink;
+        background: theme('colors.ink-light');
         opacity: 0.5;
       }
       .range-control {
-        position: relative;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
         width: 16px;
         height: 16px;
-        border-radius: 50%;
-        position: absolute;
-        background: hotpink;
-        top: 50%;
+        border-radius: 3px;
+        background: theme('colors.ink');
         margin-left: calc(#{16px} / -2);
         transform: translate3d(0, -50%, 0);
-        z-index: 2;
         .range-control-indicator {
           position: absolute;
           top: -36px;
@@ -106,6 +105,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          color: theme('colors.ink');
         }
       }
     }

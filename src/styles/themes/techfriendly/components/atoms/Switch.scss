@@ -1,0 +1,45 @@
+.techfriendly-theme-wrapper {
+  .switch-container {
+    width: 100%;
+    max-width: 300px;
+    height: fit-content;
+    background-color: theme('colors.primary-light');
+    padding: 6px;
+    border-radius: 16px;
+    .switch-wrapper {
+      display: flex;
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      background-color: theme('colors.primary-light');
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .switch-option {
+      flex: 1;
+      text-align: center;
+      padding: 4px 16px;
+      z-index: 1;
+      color: theme('colors.paper-light');
+      transition: color 0.4s ease;
+    }
+
+    .switch-option.selected {
+      color: theme('colors.paper-light');
+    }
+
+    .switch-highlight {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 33.33%;
+      height: 100%;
+      background-color: theme('colors.accent');
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+      z-index: 0;
+    }
+  }
+}

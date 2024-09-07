@@ -11,38 +11,39 @@
     display: flex;
     flex-direction: column;
 
-    label {
+    .label {
       font-size: 1rem;
-      color: var(--ink);
-      margin: 0 0 6px 12px;
+      color: theme('colors.ink');
+      margin: 0 6px;
     }
 
     .text-input {
-      background-color: var(--paper-light);
-      padding: 0.25rem 1.25rem 0.3rem 1.25rem;
-      border: 2px solid var(--accent-light);
-      border-radius: 22px;
+      background-color: theme('colors.paper-light');
+      padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+      border: 2px solid theme('colors.ink-light');
+      border-radius: 3px;
       transition: border-color 0.3s, box-shadow 0.3s, transform 0.1s ease;
       cursor: text;
 
       &:hover {
-        border: 2px solid var(--accent-dark);
+        border: 2px solid theme('colors.ink-dark');
       }
 
       &:active,
       &:focus {
+        background-color: theme('colors.paper');
         outline: none;
       }
     }
 
     .helper-text {
       margin-top: 5px;
-      color: var(--accent-dark);
+      color: theme('colors.ink');
     }
 
     .required-message {
       margin-top: 5px;
-      color: var(--accent-dark);
+      color: theme('colors.ink');
     }
   }
 }

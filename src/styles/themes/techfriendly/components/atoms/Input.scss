@@ -1,0 +1,50 @@
+.techfriendly-theme-wrapper {
+  .text-input {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .input-container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+
+    .label {
+      font-size: 1rem;
+      color: theme('colors.primary');
+      margin: 0 6px 6px 6px;
+    }
+
+    .text-input {
+      background-color: theme('colors.paper-light');
+      padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+      border: 2px solid theme('colors.primary-light');
+      border-radius: 8px;
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.1s ease;
+      cursor: text;
+
+      &:hover {
+        border: 2px solid theme('colors.accent');
+      }
+
+      &:active,
+      &:focus {
+        border: 2px solid theme('colors.accent-dark');
+        background-color: theme('colors.tertiary-light');
+        outline: none;
+      }
+    }
+
+    .helper-text {
+      margin: 6px 0 0 6px;
+      color: theme('colors.primary');
+    }
+
+    .required-message {
+      margin: 6px 0 0 6px;
+      color: theme('colors.primary');
+    }
+  }
+}

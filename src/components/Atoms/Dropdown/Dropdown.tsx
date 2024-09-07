@@ -37,7 +37,7 @@ export const Dropdown: FC<DropdownProps> = ({
       <div className={twMerge('dropdown-wrapper relative z-20', className)}>
         <button
           className={twMerge(
-            'dropdown-button flex items-center justify-between cursor-pointer transition-all duration-300 ease-in-out w-full',
+            'dropdown-button w-full flex items-center justify-between chat  cursor-pointer transition-all duration-300 ease-in-out',
             isOpen ? 'active' : '',
           )}
           onClick={() => setIsOpen(!isOpen)}
@@ -65,7 +65,7 @@ export const Dropdown: FC<DropdownProps> = ({
             <li
               key={option.value}
               className={twMerge(
-                'dropdown-item cursor-pointer transition-all duration-300 ease-in-out',
+                'dropdown-item chat cursor-pointer transition-all duration-300 ease-in-out',
                 option.value === selectedOption.value ? 'active' : '',
               )}
               onClick={() => handleSelect(option)}

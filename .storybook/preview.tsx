@@ -2,8 +2,8 @@ import React from 'react'
 import type { Preview } from '@storybook/react'
 
 import '../src/styles/globals.scss'
-import '../src/styles/fonts.scss'
-import '../src/styles/themes.scss'
+import '../src/styles/themes/default/theme.scss'
+import '../src/styles/themes/techfriendly/theme.scss'
 
 const MyThemes = ['default', 'techfriendly'] as const
 

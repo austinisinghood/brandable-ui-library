@@ -23,40 +23,18 @@ export const Accordion: FC<AccordionProps> = ({
   icon,
   panels,
 }: AccordionProps) => {
-  const arrayLength = panels.length
-  const [activePanel, setActivePanel] = useState<number | null>(null)
-  const [isAnimating, setIsAnimating] = useState(false)
+  const [activePanel, setActivePanel] = useState<number | null>(0)
 
   const handleClick = (index: number) => {
-    if (isAnimating) return
-
-    setIsAnimating(true)
-
     if (activePanel === index) {
       setActivePanel(null)
-      setTimeout(() => {
-        setIsAnimating(false)
-      }, 300) // Duration of closing animation
     } else {
-      if (activePanel !== null) {
-        setActivePanel(null)
-        setTimeout(() => {
-          setActivePanel(index)
-          setTimeout(() => {
-            setIsAnimating(false)
-          }, 150) // Duration of opening animation
-        }, 300) // Duration of closing animation
-      } else {
-        setActivePanel(index)
-        setTimeout(() => {
-          setIsAnimating(false)
-        }, 150) // Duration of opening animation
-      }
+      setActivePanel(index)
     }
   }
 
   return (
-    <div className={twMerge(`w-full accordion-container p-6 border-2 border-red-500`)}>
+    <div className={twMerge(`w-full accordion-container p-6`)}>
       {panels.map((panel: PanelProps, index: number) => (
         <div key={index} className="w-full accordion-panel">
           <button
@@ -66,7 +44,7 @@ export const Accordion: FC<AccordionProps> = ({
             <div className={titleClassName}>{panel.title}</div>
             <div
               className={twMerge(
-                `transition-all duration-300 ease-in-out`,
+                `transition-transform duration-300 ease-in-out`,
                 activePanel === index ? 'rotate-180' : '',
               )}
             >
@@ -75,9 +53,8 @@ export const Accordion: FC<AccordionProps> = ({
           </button>
           <div
             className={twMerge(
-              `w-full overflow-hidden transition-all duration-300 ease-in-out`,
-              activePanel === index ? `max-h-[1500px]` : `max-h-0`,
-              index === arrayLength - 1 ? 'last-item' : '',
+              `w-full overflow-hidden transition-all ease-in-out`,
+              activePanel === index ? `max-h-[1500px] duration-300` : `max-h-0 duration-200`,
             )}
           >
             <div className="w-full p-6">

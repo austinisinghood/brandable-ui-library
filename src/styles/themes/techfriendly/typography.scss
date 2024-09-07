@@ -1,0 +1,75 @@
+.techfriendly-theme-wrapper {
+  /* Selection */
+  ::selection {
+    background-color: theme('colors.accent');
+    color: theme('colors.ink');
+  }
+
+  /* Font styles */
+  .roar {
+    font-family: theme('fontFamily.headline');
+    font-size: theme('fontSize.4xl');
+    line-height: 0.9em;
+  }
+  .hollar {
+    font-family: theme('fontFamily.headline');
+    font-size: theme('fontSize.3xl');
+    line-height: 1em;
+  }
+  .scream {
+    font-family: theme('fontFamily.title');
+    font-size: theme('fontSize.2xl');
+    line-height: 1em;
+    font-weight: 900;
+  }
+
+  .shout {
+    font-family: theme('fontFamily.title');
+    font-size: theme('fontSize.xl');
+    line-height: 1em;
+    font-weight: 700;
+  }
+
+  .yell {
+    font-family: theme('fontFamily.body');
+    font-size: theme('fontSize.lg');
+    font-weight: 400;
+    line-height: 1em;
+  }
+
+  .talk {
+    font-family: theme('fontFamily.body');
+    font-size: theme('fontSize.base');
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+
+  .chat {
+    font-family: theme('fontFamily.body');
+    font-size: theme('fontSize.sm');
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+
+  .whisper {
+    font-family: theme('fontFamily.body');
+    font-size: theme('fontSize.xs');
+    font-weight: 400;
+    line-height: 1.5em;
+    font-style: italic;
+  }
+
+  // Button text
+  .button-text {
+    font-family: theme('fontFamily.body');
+    line-height: 1em;
+  }
+
+  // Label text
+  .label-text {
+    font-family: theme('fontFamily.body');
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+  }
+}
