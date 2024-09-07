@@ -10,6 +10,8 @@
         transform: scale(1.02);
       }
     }
+
+    // Full Width
     button.full-width {
       width: 100%;
       &:hover {
@@ -18,7 +20,7 @@
       }
     }
 
-    // sizes
+    // Sizes
     .sm {
       font-size: 0.8em;
     }
@@ -29,7 +31,7 @@
       font-size: 1.2em;
     }
 
-    // variants
+    // Variant
     .solid {
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     }
@@ -37,7 +39,7 @@
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     }
 
-    // colors
+    // Primary
     .primary.solid {
       background-color: theme('colors.primary');
       color: theme('colors.paper-light');
@@ -61,6 +63,7 @@
       }
     }
 
+    // Secondary
     .secondary.solid {
       background-color: theme('colors.secondary');
       color: theme('colors.paper-light');
@@ -84,6 +87,7 @@
       }
     }
 
+    // Tertiary
     .tertiary.solid {
       background-color: theme('colors.tertiary');
       color: theme('colors.paper-light');
@@ -107,6 +111,7 @@
       }
     }
 
+    // Accent
     .accent.solid {
       background-color: theme('colors.accent');
       color: theme('colors.ink');
@@ -130,6 +135,7 @@
       }
     }
 
+    // Ink
     .ink.solid {
       background-color: theme('colors.ink');
       color: theme('colors.paper-light');
@@ -153,6 +159,7 @@
       }
     }
 
+    // Paper
     .paper.solid {
       background-color: theme('colors.paper-light');
       color: theme('colors.ink-dark');
@@ -176,6 +183,8 @@
       }
     }
   }
+
+  // Full Width
   .button-wrapper.full-width {
     width: 100%;
   }

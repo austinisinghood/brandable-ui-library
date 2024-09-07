@@ -14,7 +14,6 @@ const meta: Meta<typeof Button> = {
     size: 'md',
     variant: 'solid',
   },
-  // tags: ['autodocs'],
 }
 
 export default meta
@@ -32,7 +31,7 @@ export const Variants: Story = {
     <div className="w-full flex flex-col space-y-2">
       <h1 className="w-full roar text-ink px-2 py-12">Button</h1>
       {/* Primary Button */}
-      <div className="w-full flex flex-col space-y-2 p-6">
+      <div className="w-full flex flex-col space-y-2 py-6">
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-ink pb-4">Primary Button</h3>
         </div>
@@ -75,7 +74,7 @@ export const Variants: Story = {
         </div>
       </div>
       {/* Secondary Button */}
-      <div className="w-full flex flex-col space-y-2 p-6">
+      <div className="w-full flex flex-col space-y-2 py-6">
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-ink pb-4">Secondary Button</h3>
         </div>
@@ -118,7 +117,7 @@ export const Variants: Story = {
         </div>
       </div>
       {/* Tertiary Button */}
-      <div className="w-full flex flex-col space-y-2 p-6">
+      <div className="w-full flex flex-col space-y-2 py-6">
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-ink pb-4">Tertiary Button</h3>
         </div>
@@ -161,7 +160,7 @@ export const Variants: Story = {
         </div>
       </div>
       {/* Accent Button */}
-      <div className="w-full flex flex-col space-y-2 p-6">
+      <div className="w-full flex flex-col space-y-2 py-6">
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-ink pb-4">Accent Button</h3>
         </div>
@@ -204,7 +203,7 @@ export const Variants: Story = {
         </div>
       </div>
       {/* Ink Button */}
-      <div className="w-full flex flex-col space-y-2 p-6">
+      <div className="w-full flex flex-col space-y-2 py-6">
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-ink pb-4">Ink Button</h3>
         </div>
@@ -247,7 +246,7 @@ export const Variants: Story = {
         </div>
       </div>
       {/* Paper Button */}
-      <div className="w-full flex flex-col space-y-2 bg-ink p-6">
+      <div className="w-full flex flex-col space-y-2 bg-ink py-6">
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-paper-light pb-4">Paper Button</h3>
         </div>

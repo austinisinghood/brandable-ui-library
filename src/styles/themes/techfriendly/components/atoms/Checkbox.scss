@@ -2,102 +2,109 @@
   .checkbox-wrapper {
     .label {
       display: flex;
-      color: theme('colors.primary');
       margin-top: 3px;
     }
     .checkbox {
-      box-shadow: 0px 0px 0px 2px theme('colors.accent');
       font-size: 3em;
       width: 25px;
       height: 25px;
-      background-color: theme('colors.paper-light');
       margin: 0 5px 0 0;
-      border: 2px solid theme('colors.paper-light');
       background-clip: border-box;
       border-radius: 6px;
       appearance: none;
       transition: background-color 0.3s, box-shadow 0.3s;
       cursor: pointer;
     }
-    .checkbox:hover {
-      background-color: theme('colors.tertiary-light');
-      box-shadow: 0px 0px 0px 2px theme('colors.accent-dark');
+  }
+
+  // Primary
+  .checkbox-wrapper.primary {
+    .label {
+      color: theme('colors.primary');
+    }
+    .checkbox {
+      box-shadow: 0px 0px 0px 2px theme('colors.primary');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
     }
     .checkbox:checked {
-      box-shadow: 0px 0px 0px 2px theme('colors.accent-dark');
-      background-color: theme('colors.accent-dark');
+      box-shadow: 0px 0px 0px 2px theme('colors.primary');
+      background-color: theme('colors.primary');
     }
   }
-  .checkbox-wrapper .label {
-    color: theme('colors.primary');
+  // Secondary
+  .checkbox-wrapper.secondary {
+    .label {
+      color: theme('colors.secondary');
+    }
+    .checkbox {
+      box-shadow: 0px 0px 0px 2px theme('colors.secondary');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .checkbox:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.secondary');
+      background-color: theme('colors.secondary');
+    }
   }
-  .checkbox-wrapper.primary .checkbox {
-    box-shadow: 0px 0px 0px 2px theme('colors.primary');
-    background-color: theme('colors.paper-light');
-    border: 2px solid theme('colors.paper-light');
+  // Tertiary
+  .checkbox-wrapper.tertiary {
+    .label {
+      color: theme('colors.tertiary');
+    }
+    .checkbox {
+      box-shadow: 0px 0px 0px 2px theme('colors.tertiary');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .checkbox:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.tertiary');
+      background-color: theme('colors.tertiary');
+    }
   }
-  .checkbox-wrapper.primary .checkbox:checked {
-    box-shadow: 0px 0px 0px 2px theme('colors.primary');
-    background-color: theme('colors.primary');
+  // Accent
+  .checkbox-wrapper.accent {
+    .label {
+      color: theme('colors.accent');
+    }
+    .checkbox {
+      box-shadow: 0px 0px 0px 2px theme('colors.accent');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .checkbox:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.accent');
+      background-color: theme('colors.accent');
+    }
   }
-  .checkbox-wrapper.secondary .label {
-    color: theme('colors.secondary');
+  // Ink
+  .checkbox-wrapper.ink {
+    .label {
+      color: theme('colors.ink');
+    }
+    .checkbox {
+      box-shadow: 0px 0px 0px 2px theme('colors.ink');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .checkbox:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.ink');
+      background-color: theme('colors.ink');
+    }
   }
-  .checkbox-wrapper.secondary .checkbox {
-    box-shadow: 0px 0px 0px 2px theme('colors.secondary');
-    background-color: theme('colors.paper-light');
-    border: 2px solid theme('colors.paper-light');
-  }
-  .checkbox-wrapper.secondary .checkbox:checked {
-    box-shadow: 0px 0px 0px 2px theme('colors.secondary');
-    background-color: theme('colors.secondary');
-  }
-  .checkbox-wrapper.tertiary .label {
-    color: theme('colors.tertiary');
-  }
-  .checkbox-wrapper.tertiary .checkbox {
-    box-shadow: 0px 0px 0px 2px theme('colors.tertiary');
-    background-color: theme('colors.paper-light');
-    border: 2px solid theme('colors.paper-light');
-  }
-  .checkbox-wrapper.tertiary .checkbox:checked {
-    box-shadow: 0px 0px 0px 2px theme('colors.tertiary');
-    background-color: theme('colors.tertiary');
-  }
-  .checkbox-wrapper.accent .label {
-    color: theme('colors.accent');
-  }
-  .checkbox-wrapper.accent .checkbox {
-    box-shadow: 0px 0px 0px 2px theme('colors.accent');
-    background-color: theme('colors.paper-light');
-    border: 2px solid theme('colors.paper-light');
-  }
-  .checkbox-wrapper.accent .checkbox:checked {
-    box-shadow: 0px 0px 0px 2px theme('colors.accent');
-    background-color: theme('colors.accent');
-  }
-  .checkbox-wrapper.ink .label {
-    color: theme('colors.ink');
-  }
-  .checkbox-wrapper.ink .checkbox {
-    box-shadow: 0px 0px 0px 2px theme('colors.ink');
-    background-color: theme('colors.paper-light');
-    border: 2px solid theme('colors.paper-light');
-  }
-  .checkbox-wrapper.ink .checkbox:checked {
-    box-shadow: 0px 0px 0px 2px theme('colors.ink');
-    background-color: theme('colors.ink');
-  }
-  .checkbox-wrapper.paper .label {
-    color: theme('colors.paper');
-  }
-  .checkbox-wrapper.paper .checkbox {
-    box-shadow: 0px 0px 0px 2px theme('colors.paper');
-    background-color: theme('colors.ink');
-    border: 2px solid theme('colors.ink');
-  }
-  .checkbox-wrapper.paper .checkbox:checked {
-    box-shadow: 0px 0px 0px 2px theme('colors.paper');
-    background-color: theme('colors.paper');
+  // Paper
+  .checkbox-wrapper.paper {
+    .label {
+      color: theme('colors.paper');
+    }
+    .checkbox {
+      box-shadow: 0px 0px 0px 2px theme('colors.paper');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .checkbox:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.paper');
+      background-color: theme('colors.paper');
+    }
   }
 }

@@ -4,7 +4,11 @@ import type { StorybookConfig } from '@storybook/react-vite'
 const config: StorybookConfig = {
   // Required
   framework: '@storybook/react-vite',
-  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+  stories: [
+    '../src/**/*.mdx',
+    '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+    '../storybook/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+  ],
   // Optional
   addons: ['@storybook/addon-essentials'],
   docs: {
