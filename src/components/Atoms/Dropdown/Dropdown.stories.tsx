@@ -5,14 +5,8 @@ import { FaCaretDown } from 'react-icons/fa'
 
 const meta: Meta<typeof Dropdown> = {
   component: Dropdown,
-}
-
-export default meta
-type Story = StoryObj<typeof Dropdown>
-
-export const Primary: Story = {
   args: {
-    className: 'w-fit',
+    className: '',
     icon: <FaCaretDown className="text-base" />,
     label: 'Test Label',
     name: 'test',
@@ -35,5 +29,43 @@ export const Primary: Story = {
       label: 'Test Label 1',
       value: 'Test Value 1',
     },
+  },
+}
+
+export default meta
+type Story = StoryObj<typeof Dropdown>
+
+export const Component: Story = {
+  render: (args) => <Dropdown {...args} />,
+  parameters: {
+    options: { showPanel: true },
+  },
+}
+
+export const Variants: Story = {
+  render: (args) => (
+    <div className="w-full flex flex-col space-y-2">
+      <h1 className="w-full roar text-ink px-2 py-12">Dropdown</h1>
+      {/* Primary Button */}
+      <div className="w-full flex flex-col space-y-2 p-6">
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <h3 className="shout text-ink pb-4">Default Dropdown</h3>
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">Dropdown</label>
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+          <Dropdown {...args} />
+        </div>
+
+        <div className="w-full pt-6">
+          <hr className="w-full border-ink" />
+        </div>
+      </div>
+    </div>
+  ),
+  parameters: {
+    controls: { disable: true },
+    options: { showPanel: false },
   },
 }

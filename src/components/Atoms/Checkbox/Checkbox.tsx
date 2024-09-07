@@ -2,18 +2,22 @@ import { FC, InputHTMLAttributes } from 'react'
 
 import { twMerge } from 'tailwind-merge'
 
-interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
-  className?: string
-  name: string
-  label: string
-}
+import { CheckboxProps } from '@/src/components/types'
 
-export const Checkbox: FC<CheckboxProps> = ({ className, name, label, id, ...rest }) => {
+export const Checkbox: FC<CheckboxProps> = ({
+  className,
+  color = 'primary',
+  label,
+  name,
+  id,
+  ...rest
+}) => {
   return (
     <div
       className={twMerge(
         `checkbox-wrapper w-fit h-fit flex flex-row items-center justify-center space-x-2`,
         className,
+        color,
       )}
     >
       <input
@@ -23,9 +27,11 @@ export const Checkbox: FC<CheckboxProps> = ({ className, name, label, id, ...res
         type="checkbox"
         {...rest}
       />
-      <label htmlFor={name} className="label label-text cursor-pointer">
-        {label}
-      </label>
+      {label && (
+        <label htmlFor={name} className="label label-text cursor-pointer">
+          {label}
+        </label>
+      )}
     </div>
   )
 }

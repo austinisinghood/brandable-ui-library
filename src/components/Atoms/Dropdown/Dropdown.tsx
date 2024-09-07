@@ -3,15 +3,7 @@ import { twMerge } from 'tailwind-merge'
 
 import { FaChevronDown } from 'react-icons/fa6'
 
-interface DropdownProps {
-  className?: string
-  icon?: React.ReactNode
-  label?: string
-  name?: string
-  onSelect: (option: { label: string; value: string }) => void
-  options: { label: string; value: string }[]
-  selectedOption: { label: string; value: string }
-}
+import { DropdownProps } from '@/src/components/types'
 
 export const Dropdown: FC<DropdownProps> = ({
   className,

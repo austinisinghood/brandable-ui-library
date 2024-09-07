@@ -7,10 +7,10 @@ import { ButtonProps } from '@/src/components/types'
 export const Button: FC<ButtonProps> = ({
   children,
   className,
-  color,
+  color = 'primary',
   full,
-  size,
-  variant,
+  size = 'md',
+  variant = 'solid',
   ...rest
 }) => {
   const isFullWidth = full ? 'full-width' : ''

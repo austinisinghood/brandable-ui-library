@@ -1,16 +1,18 @@
 import { InputHTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  name: string
-  label: string
-}
+import { InputProps } from '@/src/components/types'
 
-export const Input: React.FC<InputProps> = ({ name, label, ...rest }: InputProps) => {
+export const Input: React.FC<InputProps> = ({
+  color = 'primary',
+  name,
+  label,
+  ...rest
+}: InputProps) => {
   const isRequired = rest.required ? '* Field is required' : ''
 
   return (
-    <div className="input-container w-full">
+    <div className={twMerge(`input-wrapper w-full`, color)}>
       <label htmlFor={name} className="label label-text">
         {label}
       </label>
