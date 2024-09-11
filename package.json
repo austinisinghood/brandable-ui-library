@@ -1,7 +1,7 @@
 {
   "name": "brandable-ui-library",
   "private": false,
-  "version": "0.0.62",
+  "version": "0.0.63",
   "type": "module",
   "scripts": {
     "clean": "rm -rf dist",
@@ -92,6 +92,7 @@
   "dependencies": {
     "@storybook/api": "^7.6.17",
     "autoprefixer": "^10.4.15",
+    "esbuild": "^0.23.1",
     "react-icons": "^4.11.0",
     "sass": "^1.68.0",
     "tailwind-merge": "^1.14.0",
