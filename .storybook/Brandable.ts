@@ -4,6 +4,6 @@ export default create({
   base: 'dark',
   brandTitle: 'Brandable UI Library',
   brandUrl: '/',
-  brandImage: '/brandable-ui-logo.png',
+  brandImage: '/sidebar-logo.png',
   brandTarget: '_self',
 })

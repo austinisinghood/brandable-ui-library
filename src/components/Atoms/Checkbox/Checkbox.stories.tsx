@@ -16,7 +16,7 @@ type Story = StoryObj<typeof Checkbox>
 export const Component: Story = {
   render: (args) => <Checkbox {...args} />,
   parameters: {
-    options: { showPanel: true },
+    options: { bottomPanelHeight: 500, rightPanelWidth: 350 },
   },
 }
 
@@ -154,6 +154,8 @@ export const Variants: Story = {
   ),
   parameters: {
     controls: { disable: true },
-    options: { showPanel: false },
+    options: { bottomPanelHeight: 0, rightPanelWidth: 0 },
+    actions: { disable: true },
+    a11y: { disable: true },
   },
 }

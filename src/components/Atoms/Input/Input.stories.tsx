@@ -5,11 +5,11 @@ const meta: Meta<typeof Input> = {
   component: Input,
   args: {
     color: 'primary',
-    label: 'Input Label',
+    label: `Your Name`,
     name: 'input-name',
-    placeholder: 'Placeholder',
+    placeholder: 'Your full name here',
     required: false,
-    title: 'Title',
+    title: 'Type your name',
     type: 'text',
   },
 }
@@ -20,7 +20,7 @@ type Story = StoryObj<typeof Input>
 export const Component: Story = {
   render: (args) => <Input {...args} />,
   parameters: {
-    options: { showPanel: true },
+    options: { bottomPanelHeight: 500, rightPanelWidth: 350 },
   },
 }
 
@@ -100,6 +100,9 @@ export const Variants: Story = {
     </div>
   ),
   parameters: {
-    options: { showPanel: false },
+    controls: { disable: true },
+    options: { bottomPanelHeight: 0, rightPanelWidth: 0 },
+    actions: { disable: true },
+    a11y: { disable: true },
   },
 }

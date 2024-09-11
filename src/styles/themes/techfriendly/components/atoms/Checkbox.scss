@@ -26,6 +26,9 @@
       box-shadow: 0px 0px 0px 2px theme('colors.primary');
       background-color: theme('colors.paper-light');
       border: 2px solid theme('colors.paper-light');
+      &:hover {
+        background-color: theme('colors.paper');
+      }
     }
     .checkbox:checked {
       box-shadow: 0px 0px 0px 2px theme('colors.primary');
@@ -41,6 +44,9 @@
       box-shadow: 0px 0px 0px 2px theme('colors.secondary');
       background-color: theme('colors.paper-light');
       border: 2px solid theme('colors.paper-light');
+      &:hover {
+        background-color: theme('colors.paper');
+      }
     }
     .checkbox:checked {
       box-shadow: 0px 0px 0px 2px theme('colors.secondary');
@@ -56,6 +62,9 @@
       box-shadow: 0px 0px 0px 2px theme('colors.tertiary');
       background-color: theme('colors.paper-light');
       border: 2px solid theme('colors.paper-light');
+      &:hover {
+        background-color: theme('colors.paper');
+      }
     }
     .checkbox:checked {
       box-shadow: 0px 0px 0px 2px theme('colors.tertiary');
@@ -71,6 +80,9 @@
       box-shadow: 0px 0px 0px 2px theme('colors.accent');
       background-color: theme('colors.paper-light');
       border: 2px solid theme('colors.paper-light');
+      &:hover {
+        background-color: theme('colors.paper');
+      }
     }
     .checkbox:checked {
       box-shadow: 0px 0px 0px 2px theme('colors.accent');
@@ -86,6 +98,9 @@
       box-shadow: 0px 0px 0px 2px theme('colors.ink');
       background-color: theme('colors.paper-light');
       border: 2px solid theme('colors.paper-light');
+      &:hover {
+        background-color: theme('colors.paper');
+      }
     }
     .checkbox:checked {
       box-shadow: 0px 0px 0px 2px theme('colors.ink');
@@ -101,6 +116,9 @@
       box-shadow: 0px 0px 0px 2px theme('colors.paper');
       background-color: theme('colors.paper-light');
       border: 2px solid theme('colors.paper-light');
+      &:hover {
+        background-color: theme('colors.paper');
+      }
     }
     .checkbox:checked {
       box-shadow: 0px 0px 0px 2px theme('colors.paper');

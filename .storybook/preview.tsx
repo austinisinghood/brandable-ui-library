@@ -23,6 +23,9 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    options: {
+      showPanel: true,
+    },
   },
   globalTypes: {
     theme: {

@@ -1,8 +1,6 @@
-import { FC, useState } from 'react'
+import { FC, useState, useEffect } from 'react'
 import { twMerge } from 'tailwind-merge'
-
 import { FaChevronDown } from 'react-icons/fa6'
-
 import { DropdownProps } from '@/src/components/types'
 
 export const Dropdown: FC<DropdownProps> = ({
@@ -13,13 +11,58 @@ export const Dropdown: FC<DropdownProps> = ({
   onSelect,
   options,
   selectedOption,
+  ...rest
 }) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const isRequired = rest.required ? '* Field is required' : ''
 
+  const [isOpen, setIsOpen] = useState(false)
+  const [focusedOptionIndex, setFocusedOptionIndex] = useState<number | null>(null)
+
+  // Handle option selection
   const handleSelect = (option: { label: string; value: string }) => {
     onSelect(option)
     setIsOpen(false)
   }
+
+  // Handle keyboard navigation
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLButtonElement | HTMLUListElement>) => {
+    if (!isOpen) return
+
+    switch (e.key) {
+      case 'ArrowDown':
+        e.preventDefault()
+        setFocusedOptionIndex((prev) =>
+          prev === null || prev === options.length - 1 ? 0 : prev + 1,
+        )
+        break
+      case 'ArrowUp':
+        e.preventDefault()
+        setFocusedOptionIndex((prev) =>
+          prev === null || prev === 0 ? options.length - 1 : prev - 1,
+        )
+        break
+      case 'Enter':
+        if (focusedOptionIndex !== null) {
+          handleSelect(options[focusedOptionIndex])
+        }
+        break
+      case 'Escape':
+        setIsOpen(false)
+        break
+    }
+  }
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const dropdownElement = document.querySelector('.dropdown-container')
+      if (dropdownElement && !dropdownElement.contains(event.target as Node)) {
+        setIsOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   return (
     <div className="dropdown-container relative w-full">
@@ -28,11 +71,16 @@ export const Dropdown: FC<DropdownProps> = ({
       </label>
       <div className={twMerge('dropdown-wrapper relative z-20', className)}>
         <button
+          id={name}
           className={twMerge(
-            'dropdown-button w-full flex items-center justify-between chat  cursor-pointer transition-all duration-300 ease-in-out',
+            'dropdown-button w-full flex items-center justify-between chat cursor-pointer transition-all duration-300 ease-in-out',
             isOpen ? 'active' : '',
           )}
           onClick={() => setIsOpen(!isOpen)}
+          aria-haspopup="listbox"
+          aria-expanded={isOpen}
+          aria-labelledby={name}
+          onKeyDown={handleKeyDown}
         >
           <span>{selectedOption.label || 'Select an option'}</span>
           <div
@@ -44,37 +92,43 @@ export const Dropdown: FC<DropdownProps> = ({
             {icon ? icon : <FaChevronDown className="text-xl" />}
           </div>
         </button>
-        <ul
-          className={twMerge(
-            `dropdown-list relative z-20 h-0 overflow-hidden opacity-20`,
-            isOpen && 'opacity-100 h-auto',
-          )}
-          role="listbox"
-          aria-activedescendant={selectedOption.label}
-          tabIndex={-1}
-        >
-          {options.map((option) => (
-            <li
-              key={option.value}
-              className={twMerge(
-                'dropdown-item chat cursor-pointer transition-all duration-300 ease-in-out',
-                option.value === selectedOption.value ? 'active' : '',
-              )}
-              onClick={() => handleSelect(option)}
-              role="option"
-              aria-selected={option === selectedOption}
-            >
-              {option.label}
-            </li>
-          ))}
-        </ul>
+        {isOpen && (
+          <ul
+            className={twMerge(
+              `dropdown-list relative z-20 overflow-auto opacity-20 max-h-60`,
+              isOpen && 'opacity-100 h-auto',
+            )}
+            role="listbox"
+            aria-activedescendant={
+              focusedOptionIndex !== null
+                ? `option-${options[focusedOptionIndex].value}`
+                : undefined
+            }
+            tabIndex={0}
+            onKeyDown={handleKeyDown}
+          >
+            {options.map((option, index) => (
+              <li
+                key={option.value}
+                id={`option-${option.value}`}
+                className={twMerge(
+                  'dropdown-item chat cursor-pointer transition-all duration-300 ease-in-out',
+                  option.value === selectedOption.value ? 'active' : '',
+                  index === focusedOptionIndex ? 'focused' : '',
+                )}
+                onClick={() => handleSelect(option)}
+                role="option"
+                aria-selected={option.value === selectedOption.value}
+                tabIndex={-1}
+              >
+                {option.label}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
-      {isOpen && (
-        <div
-          className="absolute z-10 top-0 left-0 w-screen h-screen"
-          onMouseOver={() => setIsOpen(false)}
-        />
-      )}
+      {rest.title && <div className="helper-text whisper">{rest.title}</div>}
+      {isRequired && <div className="required-message whisper">{isRequired}</div>}
     </div>
   )
 }

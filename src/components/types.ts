@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, InputHTMLAttributes } from 'react'
+import { ButtonHTMLAttributes, InputHTMLAttributes, SelectHTMLAttributes } from 'react'
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode
@@ -16,7 +16,7 @@ export interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string
 }
 
-export interface DropdownProps {
+export interface DropdownProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'onSelect'> {
   className?: string
   icon?: React.ReactNode
   label?: string
@@ -30,4 +30,11 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
   name: string
   label?: string
+}
+
+export interface RadioProps extends InputHTMLAttributes<HTMLInputElement> {
+  className?: string
+  color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
+  label?: string
+  name: string
 }

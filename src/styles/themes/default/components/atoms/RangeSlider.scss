@@ -27,7 +27,6 @@
     align-items: center;
     margin: 40px calc(#{16px} / 2);
     padding-top: 1.6rem;
-    color: theme('colors.ink');
     .rangeslider-wrapper {
       position: absolute;
       width: calc(100% + #{16px});
@@ -79,13 +78,10 @@
         height: 6px;
         transform: translateY(-50%);
         border-radius: 3px;
-        background: theme('colors.paper-dark');
       }
       .range-inner-rail {
         position: absolute;
         height: 100%;
-        background: theme('colors.ink-light');
-        opacity: 0.5;
       }
       .range-control {
         position: absolute;
@@ -94,7 +90,6 @@
         width: 16px;
         height: 16px;
         border-radius: 3px;
-        background: theme('colors.ink');
         margin-left: calc(#{16px} / -2);
         transform: translate3d(0, -50%, 0);
         .range-control-indicator {
@@ -105,7 +100,132 @@
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+      }
+    }
+  }
+
+  // Primary
+  .rangeslider-container.primary {
+    color: theme('colors.primary');
+    .rangeslider-wrapper {
+    }
+    .range-control-wrapper {
+      .range-rail {
+        background: theme('colors.paper-dark');
+      }
+      .range-inner-rail {
+        background: theme('colors.primary-light');
+      }
+      .range-control {
+        background: theme('colors.primary');
+        .range-control-indicator {
+          color: theme('colors.primary');
+        }
+      }
+    }
+  }
+
+  // Secondary
+  .rangeslider-container.secondary {
+    color: theme('colors.secondary');
+    .rangeslider-wrapper {
+    }
+    .range-control-wrapper {
+      .range-rail {
+        background: theme('colors.paper-dark');
+      }
+      .range-inner-rail {
+        background: theme('colors.secondary-light');
+      }
+      .range-control {
+        background: theme('colors.secondary');
+        .range-control-indicator {
+          color: theme('colors.secondary');
+        }
+      }
+    }
+  }
+
+  // Tertiary
+  .rangeslider-container.tertiary {
+    color: theme('colors.tertiary');
+    .rangeslider-wrapper {
+    }
+    .range-control-wrapper {
+      .range-rail {
+        background: theme('colors.paper-dark');
+      }
+      .range-inner-rail {
+        background: theme('colors.tertiary-light');
+      }
+      .range-control {
+        background: theme('colors.tertiary');
+        .range-control-indicator {
+          color: theme('colors.tertiary');
+        }
+      }
+    }
+  }
+
+  // Accent
+  .rangeslider-container.accent {
+    color: theme('colors.accent');
+    .rangeslider-wrapper {
+    }
+    .range-control-wrapper {
+      .range-rail {
+        background: theme('colors.paper-dark');
+      }
+      .range-inner-rail {
+        background: theme('colors.accent-light');
+      }
+      .range-control {
+        background: theme('colors.accent');
+        .range-control-indicator {
+          color: theme('colors.accent');
+        }
+      }
+    }
+  }
+
+  // Ink
+  .rangeslider-container.ink {
+    color: theme('colors.ink');
+    .rangeslider-wrapper {
+    }
+    .range-control-wrapper {
+      .range-rail {
+        background: theme('colors.paper-dark');
+      }
+      .range-inner-rail {
+        background: theme('colors.ink-light');
+      }
+      .range-control {
+        background: theme('colors.ink');
+        .range-control-indicator {
           color: theme('colors.ink');
+        }
+      }
+    }
+  }
+
+  // Paper
+  .rangeslider-container.paper {
+    color: theme('colors.paper');
+    .rangeslider-wrapper {
+    }
+    .range-control-wrapper {
+      .range-rail {
+        background: theme('colors.ink-light');
+      }
+      .range-inner-rail {
+        background: theme('colors.paper-dark');
+      }
+      .range-control {
+        background: theme('colors.paper-light');
+        .range-control-indicator {
+          color: theme('colors.paper-light');
         }
       }
     }

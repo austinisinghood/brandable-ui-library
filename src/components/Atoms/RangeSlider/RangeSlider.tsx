@@ -1,6 +1,8 @@
 import { FC, useState, useEffect } from 'react'
+import { twMerge } from 'tailwind-merge'
 
 interface RangeSliderProps {
+  color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
   step: number
   min: number
   max: number
@@ -9,6 +11,7 @@ interface RangeSliderProps {
 }
 
 export const RangeSlider: FC<RangeSliderProps> = ({
+  color,
   step = 1,
   min = 0,
   max = 100,
@@ -40,8 +43,11 @@ export const RangeSlider: FC<RangeSliderProps> = ({
   }
 
   return (
-    <div className="rangeslider-container">
+    <div className={twMerge(`rangeslider-container`, color)}>
       <div className="rangeslider-wrapper">
+        <label htmlFor="min-range" className="sr-only">
+          Minimum value
+        </label>
         <input
           className="range-input"
           type="range"
@@ -50,7 +56,11 @@ export const RangeSlider: FC<RangeSliderProps> = ({
           max={max}
           step={step}
           onChange={handleMinChange}
+          aria-label="Minimum range value"
         />
+        <label htmlFor="max-range" className="sr-only">
+          Maximum value
+        </label>
         <input
           className="range-input"
           type="range"
@@ -59,6 +69,7 @@ export const RangeSlider: FC<RangeSliderProps> = ({
           max={max}
           step={step}
           onChange={handleMaxChange}
+          aria-label="Maximum range value"
         />
       </div>
       <div className="range-control-wrapper">

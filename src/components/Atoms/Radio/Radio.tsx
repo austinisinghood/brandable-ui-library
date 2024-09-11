@@ -1,36 +1,35 @@
-import { InputHTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  className?: string
-  name: string
-  label: string
-}
+import { RadioProps } from '@/src/components/types'
 
-export const Radio: React.FC<InputProps> = ({
+export const Radio: React.FC<RadioProps> = ({
   className,
+  color = 'primary',
   name,
   label,
   id,
   ...rest
-}: InputProps) => {
+}: RadioProps) => {
   return (
     <div
       className={twMerge(
-        `radio-input-container w-fit h-fit flex flex-row items-center justify-center space-x-2`,
+        `radio-wrapper w-fit h-fit flex flex-row items-center justify-center space-x-2`,
         className,
+        color,
       )}
     >
       <input
         id={id}
         name={name}
-        className="input transition-all ease-in-out duration-200"
+        className="radio transition-all ease-in-out duration-200"
         type="radio"
         {...rest}
       />
-      <label htmlFor={id} className="label label-text cursor-pointer">
-        {label}
-      </label>
+      {label && (
+        <label htmlFor={name} className="label label-text cursor-pointer">
+          {label}
+        </label>
+      )}
     </div>
   )
 }

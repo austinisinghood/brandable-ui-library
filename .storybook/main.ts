@@ -12,20 +12,15 @@ const config: StorybookConfig = {
   ],
 
   // Optional
-  addons: [
-    '@storybook/addon-essentials',
-    '@storybook/addon-a11y',
-    '@storybook/addon-mdx-gfm',
-    '@chromatic-com/storybook'
-  ],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-a11y', '@storybook/addon-mdx-gfm'],
 
   docs: {},
 
   staticDirs: ['../public'],
 
   typescript: {
-    reactDocgen: 'react-docgen-typescript'
-  }
+    reactDocgen: 'react-docgen-typescript',
+  },
 }
 
 export default config

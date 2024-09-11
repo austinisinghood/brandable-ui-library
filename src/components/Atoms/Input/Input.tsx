@@ -1,4 +1,3 @@
-import { InputHTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 import { InputProps } from '@/src/components/types'
@@ -17,7 +16,7 @@ export const Input: React.FC<InputProps> = ({
         {label}
       </label>
       <input name={name} id={name} className="text-input chat" {...rest} />
-      {rest.title && <span className="required-message whisper">{rest.title}</span>}
+      {rest.title && <span className="helper-text whisper">{rest.title}</span>}
       {isRequired && <span className="required-message whisper">{isRequired}</span>}
     </div>
   )

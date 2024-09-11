@@ -1,27 +1,110 @@
 .default-theme-wrapper {
-  .radio-input-container {
+  .radio-wrapper {
     .label {
       display: flex;
-      color: theme('colors.ink');
       margin-top: 3px;
     }
-    .input {
-      box-shadow: 0px 0px 0px 2px theme('colors.ink');
+    .radio {
       font-size: 3em;
       width: 25px;
       height: 25px;
       margin: 0 5px 0 0;
-      background-color: theme('colors.paper-light');
-      border: 2px solid theme('colors.paper-light');
       background-clip: border-box;
-      border-radius: 50%;
+      border-radius: 9999px;
       appearance: none;
       transition: background-color 0.3s, box-shadow 0.3s;
       cursor: pointer;
     }
-    .input:checked {
-      box-shadow: 0px 0px 0px 2px theme('colors.ink-dark');
-      background-color: theme('colors.ink-dark');
+  }
+
+  // Primary
+  .radio-wrapper.primary {
+    .label {
+      color: theme('colors.primary');
+    }
+    .radio {
+      box-shadow: 0px 0px 0px 2px theme('colors.primary');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .radio:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.primary');
+      background-color: theme('colors.primary');
+    }
+  }
+  // Secondary
+  .radio-wrapper.secondary {
+    .label {
+      color: theme('colors.secondary');
+    }
+    .radio {
+      box-shadow: 0px 0px 0px 2px theme('colors.secondary');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .radio:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.secondary');
+      background-color: theme('colors.secondary');
+    }
+  }
+  // Tertiary
+  .radio-wrapper.tertiary {
+    .label {
+      color: theme('colors.tertiary');
+    }
+    .radio {
+      box-shadow: 0px 0px 0px 2px theme('colors.tertiary');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .radio:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.tertiary');
+      background-color: theme('colors.tertiary');
+    }
+  }
+  // Accent
+  .radio-wrapper.accent {
+    .label {
+      color: theme('colors.accent');
+    }
+    .radio {
+      box-shadow: 0px 0px 0px 2px theme('colors.accent');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .radio:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.accent');
+      background-color: theme('colors.accent');
+    }
+  }
+  // Ink
+  .radio-wrapper.ink {
+    .label {
+      color: theme('colors.ink');
+    }
+    .radio {
+      box-shadow: 0px 0px 0px 2px theme('colors.ink');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .radio:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.ink');
+      background-color: theme('colors.ink');
+    }
+  }
+  // Paper
+  .radio-wrapper.paper {
+    .label {
+      color: theme('colors.paper');
+    }
+    .radio {
+      box-shadow: 0px 0px 0px 2px theme('colors.paper');
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+    }
+    .radio:checked {
+      box-shadow: 0px 0px 0px 2px theme('colors.paper');
+      background-color: theme('colors.paper');
     }
   }
 }
