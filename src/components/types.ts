@@ -49,6 +49,7 @@ export interface SwitchProps {
   options: [string, string] | [string, string, string]
   initialOption?: string
   onChange?: (selectedOption: string) => void
+  label?: string
 }
 
 export interface ToggleSwitchProps extends InputHTMLAttributes<HTMLInputElement> {

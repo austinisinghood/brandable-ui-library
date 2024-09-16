@@ -29,8 +29,17 @@ export const Variants: Story = {
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-ink pb-4">Primary Toggle</h3>
         </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">With Label</label>
+        </div>
         <div className="w-full flex flex-row space-x-2 px-2 pb-4">
           <Toggle align="left" color="primary" label="Toggle" />
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">Without Label</label>
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+          <Toggle align="left" color="primary" />
         </div>
         <div className="w-full pt-6">
           <hr className="w-full border-ink" />
@@ -41,8 +50,17 @@ export const Variants: Story = {
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-ink pb-4">Secondary Toggle</h3>
         </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">With Label</label>
+        </div>
         <div className="w-full flex flex-row space-x-2 px-2 pb-4">
           <Toggle align="left" color="secondary" label="Toggle" />
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">Without Label</label>
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+          <Toggle align="left" color="secondary" />
         </div>
         <div className="w-full pt-6">
           <hr className="w-full border-ink" />
@@ -53,8 +71,17 @@ export const Variants: Story = {
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-ink pb-4">Tertiary Toggle</h3>
         </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">With Label</label>
+        </div>
         <div className="w-full flex flex-row space-x-2 px-2 pb-4">
           <Toggle align="left" color="tertiary" label="Toggle" />
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">Without Label</label>
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+          <Toggle align="left" color="tertiary" />
         </div>
         <div className="w-full pt-6">
           <hr className="w-full border-ink" />
@@ -65,8 +92,17 @@ export const Variants: Story = {
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-ink pb-4">Accent Toggle</h3>
         </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">With Label</label>
+        </div>
         <div className="w-full flex flex-row space-x-2 px-2 pb-4">
           <Toggle align="left" color="accent" label="Toggle" />
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">Without Label</label>
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+          <Toggle align="left" color="accent" />
         </div>
         <div className="w-full pt-6">
           <hr className="w-full border-ink" />
@@ -77,8 +113,17 @@ export const Variants: Story = {
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-ink pb-4">Ink Toggle</h3>
         </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">With Label</label>
+        </div>
         <div className="w-full flex flex-row space-x-2 px-2 pb-4">
           <Toggle align="left" color="ink" label="Toggle" />
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-ink">Without Label</label>
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+          <Toggle align="left" color="ink" />
         </div>
         <div className="w-full pt-6">
           <hr className="w-full border-ink" />
@@ -89,8 +134,17 @@ export const Variants: Story = {
         <div className="w-full flex flex-row space-x-2 px-2">
           <h3 className="shout text-paper-light pb-4">Paper Toggle</h3>
         </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-paper-light">With Label</label>
+        </div>
         <div className="w-full flex flex-row space-x-2 px-2 pb-4">
           <Toggle align="left" color="paper" label="Toggle" />
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2">
+          <label className="chat text-paper">Without Label</label>
+        </div>
+        <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+          <Toggle align="left" color="paper" />
         </div>
       </div>
     </div>

@@ -1,4 +1,11 @@
 .techfriendly-theme-wrapper {
+  .label {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 6px 0;
+    text-align: center;
+  }
+
   .switch-container {
     width: 100%;
     max-width: 300px;
@@ -38,99 +45,129 @@
     }
   }
   // Primary
-  .switch-container.primary {
-    background-color: theme('colors.primary');
-    .switch-wrapper {
+  .switch.primary {
+    .label {
+      color: theme('colors.primary');
+    }
+    .switch-container {
       background-color: theme('colors.primary');
-    }
-    .switch-option {
-      color: theme('colors.paper-light');
-    }
-    .switch-option.selected {
-      color: theme('colors.paper-light');
-    }
-    .switch-highlight {
-      background-color: theme('colors.accent');
+      .switch-wrapper {
+        background-color: theme('colors.primary');
+      }
+      .switch-option {
+        color: theme('colors.paper-light');
+      }
+      .switch-option.selected {
+        color: theme('colors.paper-light');
+      }
+      .switch-highlight {
+        background-color: theme('colors.accent');
+      }
     }
   }
   // Secondary
-  .switch-container.secondary {
-    background-color: theme('colors.secondary-dark');
-    .switch-wrapper {
+  .switch.secondary {
+    .label {
+      color: theme('colors.secondary-dark');
+    }
+    .switch-container {
       background-color: theme('colors.secondary-dark');
-    }
-    .switch-option {
-      color: theme('colors.paper-light');
-    }
-    .switch-option.selected {
-      color: theme('colors.paper-light');
-    }
-    .switch-highlight {
-      background-color: theme('colors.accent');
+      .switch-wrapper {
+        background-color: theme('colors.secondary-dark');
+      }
+      .switch-option {
+        color: theme('colors.paper-light');
+      }
+      .switch-option.selected {
+        color: theme('colors.paper-light');
+      }
+      .switch-highlight {
+        background-color: theme('colors.accent');
+      }
     }
   }
   // Tertiary
-  .switch-container.tertiary {
-    background-color: theme('colors.tertiary-light');
-    .switch-wrapper {
+  .switch.tertiary {
+    .label {
+      color: theme('colors.primary-dark');
+    }
+    .switch-container {
       background-color: theme('colors.tertiary-light');
-    }
-    .switch-option {
-      color: theme('colors.primary-dark');
-    }
-    .switch-option.selected {
-      color: theme('colors.primary-dark');
-    }
-    .switch-highlight {
-      background-color: theme('colors.accent-light');
+      .switch-wrapper {
+        background-color: theme('colors.tertiary-light');
+      }
+      .switch-option {
+        color: theme('colors.primary-dark');
+      }
+      .switch-option.selected {
+        color: theme('colors.primary-dark');
+      }
+      .switch-highlight {
+        background-color: theme('colors.accent-light');
+      }
     }
   }
   // Accent
-  .switch-container.accent {
-    background-color: theme('colors.accent-light');
-    .switch-wrapper {
+  .switch.accent {
+    .label {
+      color: theme('colors.accent-light');
+    }
+    .switch-container {
       background-color: theme('colors.accent-light');
-    }
-    .switch-option {
-      color: theme('colors.paper-light');
-    }
-    .switch-option.selected {
-      color: theme('colors.paper-light');
-    }
-    .switch-highlight {
-      background-color: theme('colors.primary-light');
+      .switch-wrapper {
+        background-color: theme('colors.accent-light');
+      }
+      .switch-option {
+        color: theme('colors.paper-light');
+      }
+      .switch-option.selected {
+        color: theme('colors.paper-light');
+      }
+      .switch-highlight {
+        background-color: theme('colors.primary-light');
+      }
     }
   }
   // Ink
-  .switch-container.ink {
-    background-color: theme('colors.ink');
-    .switch-wrapper {
+  .switch.ink {
+    .label {
+      color: theme('colors.ink');
+    }
+    .switch-container {
       background-color: theme('colors.ink');
-    }
-    .switch-option {
-      color: theme('colors.paper-light');
-    }
-    .switch-option.selected {
-      color: theme('colors.paper-light');
-    }
-    .switch-highlight {
-      background-color: theme('colors.accent');
+      .switch-wrapper {
+        background-color: theme('colors.ink');
+      }
+      .switch-option {
+        color: theme('colors.paper-light');
+      }
+      .switch-option.selected {
+        color: theme('colors.paper-light');
+      }
+      .switch-highlight {
+        background-color: theme('colors.accent');
+      }
     }
   }
   // Paper
-  .switch-container.paper {
-    background-color: theme('colors.paper-light');
-    .switch-wrapper {
-      background-color: theme('colors.paper-light');
+  .switch.paper {
+    .label {
+      color: theme('colors.paper-light');
     }
-    .switch-option {
-      color: theme('colors.ink');
-    }
-    .switch-option.selected {
-      color: theme('colors.ink');
-    }
-    .switch-highlight {
-      background-color: theme('colors.accent-light');
+    .switch-container {
+      background-color: theme('colors.paper');
+      .switch-wrapper {
+        background-color: theme('colors.paper');
+      }
+      .switch-option {
+        color: theme('colors.ink');
+      }
+      .switch-option.selected {
+        color: theme('colors.ink');
+      }
+      .switch-highlight {
+        background-color: theme('colors.accent-light');
+      }
     }
   }
 }

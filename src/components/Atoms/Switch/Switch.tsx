@@ -9,6 +9,7 @@ export const Switch: FC<SwitchProps> = ({
   color = 'primary',
   options = ['Option1', 'Option2', 'Option3'],
   initialOption = 'Option1',
+  label,
   onChange,
 }) => {
   const [selectedOption, setSelectedOption] = useState<string>(initialOption)
@@ -23,24 +24,27 @@ export const Switch: FC<SwitchProps> = ({
   const selectedIndex = options.indexOf(selectedOption)
 
   return (
-    <div className={twMerge(`switch-container`, color)}>
-      <div className="switch-wrapper">
-        {options.map((option, index) => (
+    <div className={twMerge(`switch`, color)}>
+      {label && <div className="label label-text">{label}</div>}
+      <div className="switch-container">
+        <div className="switch-wrapper">
+          {options.map((option, index) => (
+            <div
+              key={index}
+              className={twMerge('switch-option', selectedOption === option ? 'selected' : '')}
+              onClick={() => handleOptionChange(option)}
+            >
+              {option}
+            </div>
+          ))}
           <div
-            key={index}
-            className={twMerge('switch-option', selectedOption === option ? 'selected' : '')}
-            onClick={() => handleOptionChange(option)}
-          >
-            {option}
-          </div>
-        ))}
-        <div
-          className="switch-highlight"
-          style={{
-            width: `${highlightWidth}%`,
-            transform: `translateX(${selectedIndex * 100}%)`,
-          }}
-        />
+            className="switch-highlight"
+            style={{
+              width: `${highlightWidth}%`,
+              transform: `translateX(${selectedIndex * 100}%)`,
+            }}
+          />
+        </div>
       </div>
     </div>
   )
