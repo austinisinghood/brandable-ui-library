@@ -1,5 +1,18 @@
 import { ButtonHTMLAttributes, InputHTMLAttributes, SelectHTMLAttributes } from 'react'
 
+export type AccordionProps = {
+  color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
+  titleClassName?: string
+  contentClassName?: string
+  icon?: React.ReactNode
+  panels: PanelProps[]
+}
+
+export type PanelProps = {
+  title: React.ReactNode
+  content: React.ReactNode
+}
+
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode
   className?: string

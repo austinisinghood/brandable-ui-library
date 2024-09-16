@@ -1,22 +1,4 @@
 .techfriendly-theme-wrapper {
-  .radio-wrapper {
-    .label {
-      display: flex;
-      margin-top: 3px;
-    }
-    .radio {
-      font-size: 3em;
-      width: 25px;
-      height: 25px;
-      margin: 0 5px 0 0;
-      background-clip: border-box;
-      border-radius: 9999px;
-      appearance: none;
-      transition: background-color 0.3s, box-shadow 0.3s;
-      cursor: pointer;
-    }
-  }
-
   // Primary
   .radio-wrapper.primary {
     .label {
@@ -123,6 +105,29 @@
     .radio:checked {
       box-shadow: 0px 0px 0px 2px theme('colors.paper');
       background-color: theme('colors.paper');
+    }
+  }
+
+  // Defaults
+  .radio-wrapper {
+    .label {
+      display: flex;
+      margin-top: 3px;
+    }
+    .radio {
+      font-size: 3em;
+      min-width: 25px;
+      width: 25px;
+      max-width: 25px;
+      min-height: 25px;
+      height: 25px;
+      max-height: 25px;
+      margin: 0 5px 0 0;
+      background-clip: border-box;
+      border-radius: 9999px;
+      appearance: none;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      cursor: pointer;
     }
   }
 }

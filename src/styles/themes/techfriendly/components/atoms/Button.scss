@@ -1,44 +1,5 @@
 .techfriendly-theme-wrapper {
   .button-wrapper {
-    button {
-      padding: 0.75em 2em;
-      border-radius: 9999px;
-      border: 2px solid transparent;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.02);
-      }
-    }
-
-    // Full Width
-    button.full-width {
-      width: 100%;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.005);
-      }
-    }
-
-    // Sizes
-    .sm {
-      font-size: 0.8em;
-    }
-    .md {
-      font-size: 1em;
-    }
-    .lg {
-      font-size: 1.2em;
-    }
-
-    // Variants
-    .solid {
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-    }
-    .outlined {
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-    }
-
     // Primary
     .primary.solid {
       background-color: theme('colors.primary');
@@ -181,6 +142,46 @@
       &:hover {
         color: theme('colors.paper');
       }
+    }
+
+    // Defaults
+    button {
+      padding: 0.75em 2em;
+      border-radius: 9999px;
+      border: 2px solid transparent;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+      }
+    }
+
+    // Full Width
+    button.full-width {
+      width: 100%;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.005);
+      }
+    }
+
+    // Sizes
+    .sm {
+      font-size: 0.8em;
+    }
+    .md {
+      font-size: 1em;
+    }
+    .lg {
+      font-size: 1.2em;
+    }
+
+    // Variants
+    .solid {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+    .outlined {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     }
   }
 

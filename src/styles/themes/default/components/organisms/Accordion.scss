@@ -1,13 +1,108 @@
 .default-theme-wrapper {
-  .accordion-container {
+  // Primary
+  .accordion-container.primary {
     background-color: theme('colors.paper-light');
-    border-radius: 3px;
+    .accordion-panel {
+      border-bottom: 2px solid theme('colors.ink');
+      .panel-text {
+        color: theme('colors.primary');
+      }
+      .panel-icon {
+        color: theme('colors.primary-light');
+      }
+      .panel-content {
+        color: theme('colors.primary-light');
+      }
+    }
+  }
+  // Secondary
+  .accordion-container.secondary {
+    background-color: theme('colors.paper-light');
+    .accordion-panel {
+      border-bottom: 2px solid theme('colors.ink');
+      .panel-text {
+        color: theme('colors.secondary');
+      }
+      .panel-icon {
+        color: theme('colors.secondary-light');
+      }
+      .panel-content {
+        color: theme('colors.secondary-light');
+      }
+    }
+  }
+  // Tertiary
+  .accordion-container.tertiary {
+    background-color: theme('colors.paper-light');
+    .accordion-panel {
+      border-bottom: 2px solid theme('colors.ink');
+      .panel-text {
+        color: theme('colors.tertiary');
+      }
+      .panel-icon {
+        color: theme('colors.tertiary-light');
+      }
+      .panel-content {
+        color: theme('colors.tertiary-light');
+      }
+    }
+  }
+  // Accent
+  .accordion-container.accent {
+    background-color: theme('colors.accent-light');
+    .accordion-panel {
+      border-bottom: 2px solid theme('colors.ink');
+      .panel-text {
+        color: theme('colors.ink');
+      }
+      .panel-icon {
+        color: theme('colors.ink');
+      }
+      .panel-content {
+        color: theme('colors.ink-light');
+      }
+    }
+  }
+  // Ink
+  .accordion-container.ink {
+    background-color: theme('colors.ink');
+    .accordion-panel {
+      border-bottom: 2px solid theme('colors.paper-light');
+      .panel-text {
+        color: theme('colors.paper-light');
+      }
+      .panel-icon {
+        color: theme('colors.paper-dark');
+      }
+      .panel-content {
+        color: theme('colors.paper-dark');
+      }
+    }
+  }
+  // Paper
+  .accordion-container.paper {
+    background-color: theme('colors.paper-light');
+    .accordion-panel {
+      border-bottom: 2px solid theme('colors.ink');
+      .panel-text {
+        color: theme('colors.ink');
+      }
+      .panel-icon {
+        color: theme('colors.ink-light');
+      }
+      .panel-content {
+        color: theme('colors.ink-light');
+      }
+    }
   }
 
-  .accordion-panel {
-    border-bottom: 2px solid theme('colors.ink');
-  }
-  .accordion-panel:last-child {
-    border-bottom: none;
+  // Defaults
+  .accordion-container {
+    border-radius: 3px;
+    .accordion-panel {
+    }
+    .accordion-panel:last-child {
+      border-bottom: none;
+    }
   }
 }

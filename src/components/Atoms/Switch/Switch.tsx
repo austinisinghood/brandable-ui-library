@@ -24,7 +24,7 @@ export const Switch: FC<SwitchProps> = ({
   const selectedIndex = options.indexOf(selectedOption)
 
   return (
-    <div className={twMerge(`switch`, color)}>
+    <div className={twMerge(`w-fit switch`, color)}>
       {label && <div className="label label-text">{label}</div>}
       <div className="switch-container">
         <div className="switch-wrapper">

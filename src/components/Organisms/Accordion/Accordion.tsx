@@ -5,19 +5,10 @@ import { twMerge } from 'tailwind-merge'
 
 import { FaChevronDown } from 'react-icons/fa6'
 
-type AccordionProps = {
-  titleClassName?: string
-  contentClassName?: string
-  icon?: React.ReactNode
-  panels: PanelProps[]
-}
-
-type PanelProps = {
-  title: React.ReactNode
-  content: React.ReactNode
-}
+import { PanelProps, AccordionProps } from '@/src/components/types'
 
 export const Accordion: FC<AccordionProps> = ({
+  color,
   titleClassName,
   contentClassName,
   icon,
@@ -34,17 +25,17 @@ export const Accordion: FC<AccordionProps> = ({
   }
 
   return (
-    <div className={twMerge(`w-full accordion-container p-6`)}>
+    <div className={twMerge(`w-full accordion-container p-6`, color)}>
       {panels.map((panel: PanelProps, index: number) => (
         <div key={index} className="w-full accordion-panel">
           <button
             onClick={() => handleClick(index)}
             className="w-full flex justify-between items-center py-4 px-6 text-left"
           >
-            <div className={titleClassName}>{panel.title}</div>
+            <div className={twMerge(`panel-text`, titleClassName)}>{panel.title}</div>
             <div
               className={twMerge(
-                `transition-transform duration-300 ease-in-out`,
+                `panel-icon transition-transform duration-300 ease-in-out`,
                 activePanel === index ? 'rotate-180' : '',
               )}
             >
@@ -53,7 +44,7 @@ export const Accordion: FC<AccordionProps> = ({
           </button>
           <div
             className={twMerge(
-              `w-full overflow-hidden transition-all ease-in-out`,
+              `panel-content w-full overflow-hidden transition-all ease-in-out`,
               activePanel === index ? `max-h-[1500px] duration-300` : `max-h-0 duration-200`,
             )}
           >
