@@ -3,14 +3,18 @@
 import { InputHTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-interface ToggleSwitchProps extends InputHTMLAttributes<HTMLInputElement> {
-  align?: 'left' | 'right'
-  label?: string
-}
+import { ToggleSwitchProps } from '@/src/components/types'
 
-export const Toggle: React.FC<ToggleSwitchProps> = ({ align, label, ...props }) => {
+export const Toggle: React.FC<ToggleSwitchProps> = ({
+  align,
+  color = 'primary',
+  label,
+  ...props
+}) => {
   return (
-    <div className="w-fit flex flex-row items-center justify-center">
+    <div
+      className={twMerge(`w-fit flex flex-row items-center justify-center toggle-container`, color)}
+    >
       {label && (
         <div className={twMerge(`label label-text px-2`, align === 'left' ? 'order-1' : 'order-2')}>
           {label}

@@ -2,15 +2,21 @@ import { TextareaHTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+  color: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
   name: string
   label: string
 }
 
-export const Textarea: React.FC<TextareaProps> = ({ name, label, ...rest }: TextareaProps) => {
+export const Textarea: React.FC<TextareaProps> = ({
+  color = 'primary',
+  name,
+  label,
+  ...rest
+}: TextareaProps) => {
   const isRequired = rest.required ? '* Field is required' : ''
 
   return (
-    <div className="textarea-container w-full">
+    <div className={twMerge(`textarea-wrapper w-full`, color)}>
       <label htmlFor={name} className="label label-text">
         {label}
       </label>

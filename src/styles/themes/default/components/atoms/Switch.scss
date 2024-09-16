@@ -3,7 +3,6 @@
     width: 100%;
     max-width: 300px;
     height: fit-content;
-    background-color: theme('colors.ink');
     padding: 6px;
     border-radius: 6px;
     .switch-wrapper {
@@ -11,7 +10,6 @@
       position: relative;
       width: 100%;
       max-width: 300px;
-      background-color: theme('colors.ink');
       border-radius: 3px;
       overflow: hidden;
       cursor: pointer;
@@ -22,12 +20,10 @@
       text-align: center;
       padding: 4px 16px;
       z-index: 1;
-      color: theme('colors.paper-light');
       transition: color 0.4s ease;
     }
 
     .switch-option.selected {
-      color: theme('colors.ink');
     }
 
     .switch-highlight {
@@ -36,10 +32,105 @@
       left: 0;
       width: 33.33%;
       height: 100%;
-      background-color: theme('colors.paper-light');
       border-radius: 3px;
       transition: transform 0.4s ease;
       z-index: 0;
+    }
+  }
+  // Primary
+  .switch-container.primary {
+    background-color: theme('colors.primary');
+    .switch-wrapper {
+      background-color: theme('colors.primary');
+    }
+    .switch-option {
+      color: theme('colors.paper-light');
+    }
+    .switch-option.selected {
+      color: theme('colors.primary');
+    }
+    .switch-highlight {
+      background-color: theme('colors.paper-light');
+    }
+  }
+  // Secondary
+  .switch-container.secondary {
+    background-color: theme('colors.secondary');
+    .switch-wrapper {
+      background-color: theme('colors.secondary');
+    }
+    .switch-option {
+      color: theme('colors.paper-light');
+    }
+    .switch-option.selected {
+      color: theme('colors.secondary');
+    }
+    .switch-highlight {
+      background-color: theme('colors.paper-light');
+    }
+  }
+  // Tertiary
+  .switch-container.tertiary {
+    background-color: theme('colors.tertiary');
+    .switch-wrapper {
+      background-color: theme('colors.tertiary');
+    }
+    .switch-option {
+      color: theme('colors.paper-light');
+    }
+    .switch-option.selected {
+      color: theme('colors.tertiary');
+    }
+    .switch-highlight {
+      background-color: theme('colors.paper-light');
+    }
+  }
+  // Accent
+  .switch-container.accent {
+    background-color: theme('colors.accent');
+    .switch-wrapper {
+      background-color: theme('colors.accent');
+    }
+    .switch-option {
+      color: theme('colors.ink');
+    }
+    .switch-option.selected {
+      color: theme('colors.ink');
+    }
+    .switch-highlight {
+      background-color: theme('colors.paper-light');
+    }
+  }
+  // Ink
+  .switch-container.ink {
+    background-color: theme('colors.ink');
+    .switch-wrapper {
+      background-color: theme('colors.ink');
+    }
+    .switch-option {
+      color: theme('colors.paper-light');
+    }
+    .switch-option.selected {
+      color: theme('colors.ink');
+    }
+    .switch-highlight {
+      background-color: theme('colors.paper-light');
+    }
+  }
+  // Paper
+  .switch-container.paper {
+    background-color: theme('colors.paper');
+    .switch-wrapper {
+      background-color: theme('colors.paper');
+    }
+    .switch-option {
+      color: theme('colors.ink');
+    }
+    .switch-option.selected {
+      color: theme('colors.paper');
+    }
+    .switch-highlight {
+      background-color: theme('colors.ink');
     }
   }
 }

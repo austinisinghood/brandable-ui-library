@@ -111,7 +111,7 @@ export const Variants: Story = {
           <Button color="secondary" size="lg" variant="outlined" full>
             Secondary
           </Button>
-        </div>{' '}
+        </div>
         <div className="w-full pt-6">
           <hr className="w-full border-ink" />
         </div>
@@ -197,7 +197,7 @@ export const Variants: Story = {
           <Button color="accent" size="lg" variant="outlined" full>
             Accent
           </Button>
-        </div>{' '}
+        </div>
         <div className="w-full pt-6">
           <hr className="w-full border-ink" />
         </div>
@@ -240,7 +240,7 @@ export const Variants: Story = {
           <Button color="ink" size="lg" variant="outlined" full>
             Ink
           </Button>
-        </div>{' '}
+        </div>
         <div className="w-full pt-6">
           <hr className="w-full border-ink" />
         </div>

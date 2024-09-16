@@ -1,50 +1,156 @@
 .default-theme-wrapper {
-  /* The switch - the box around the slider */
-  .toggle-wrapper {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
+  .toggle-container {
+    /* The switch - the box around the slider */
+    .toggle-wrapper {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
 
-  /* Hide default HTML checkbox */
-  .toggle-wrapper input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
+    /* Hide default HTML checkbox */
+    .toggle-wrapper input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
 
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: theme('colors.ink-light');
-    border-radius: 6px;
-    transition: 0.4s;
-  }
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 6px;
+      transition: 0.4s;
+    }
 
-  .slider:before {
-    position: absolute;
-    content: '';
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: theme('colors.paper-light');
-    border-radius: 3px;
-    transition: 0.4s;
-  }
+    .slider:before {
+      position: absolute;
+      content: '';
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      border-radius: 3px;
+      transition: 0.4s;
+    }
 
-  input:checked + .slider {
-    background-color: theme('colors.ink-dark');
-  }
+    input:checked + .slider {
+    }
 
-  input:checked + .slider:before {
-    transform: translateX(26px);
-    background-color: theme('colors.paper-light');
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+  }
+  // Primary
+  .toggle-container {
+    .label {
+      color: theme('colors.primary');
+    }
+    .slider {
+      background-color: theme('colors.primary-light');
+    }
+    .slider:before {
+      background-color: theme('colors.paper-light');
+    }
+    input:checked + .slider {
+      background-color: theme('colors.primary-dark');
+    }
+    input:checked + .slider:before {
+      background-color: theme('colors.paper-light');
+    }
+  }
+  // Secondary
+  .toggle-container.secondary {
+    .label {
+      color: theme('colors.secondary');
+    }
+    .slider {
+      background-color: theme('colors.secondary-light');
+    }
+    .slider:before {
+      background-color: theme('colors.paper-light');
+    }
+    input:checked + .slider {
+      background-color: theme('colors.secondary-dark');
+    }
+    input:checked + .slider:before {
+      background-color: theme('colors.paper-light');
+    }
+  }
+  // Tertiary
+  .toggle-container.tertiary {
+    .label {
+      color: theme('colors.tertiary');
+    }
+    .slider {
+      background-color: theme('colors.tertiary-light');
+    }
+    .slider:before {
+      background-color: theme('colors.paper-light');
+    }
+    input:checked + .slider {
+      background-color: theme('colors.tertiary-dark');
+    }
+    input:checked + .slider:before {
+      background-color: theme('colors.paper-light');
+    }
+  }
+  // Accent
+  .toggle-container.accent {
+    .label {
+      color: theme('colors.accent');
+    }
+    .slider {
+      background-color: theme('colors.accent-light');
+    }
+    .slider:before {
+      background-color: theme('colors.paper-light');
+    }
+    input:checked + .slider {
+      background-color: theme('colors.accent-dark');
+    }
+    input:checked + .slider:before {
+      background-color: theme('colors.paper-light');
+    }
+  }
+  // Ink
+  .toggle-container.ink {
+    .label {
+      color: theme('colors.ink');
+    }
+    .slider {
+      background-color: theme('colors.ink-light');
+    }
+    .slider:before {
+      background-color: theme('colors.paper-light');
+    }
+    input:checked + .slider {
+      background-color: theme('colors.ink-dark');
+    }
+    input:checked + .slider:before {
+      background-color: theme('colors.paper-light');
+    }
+  }
+  // Paper
+  .toggle-container.paper {
+    .label {
+      color: theme('colors.paper');
+    }
+    .slider {
+      background-color: theme('colors.paper-light');
+    }
+    .slider:before {
+      background-color: theme('colors.ink-light');
+    }
+    input:checked + .slider {
+      background-color: theme('colors.paper-dark');
+    }
+    input:checked + .slider:before {
+      background-color: theme('colors.ink-dark');
+    }
   }
 }

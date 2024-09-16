@@ -38,3 +38,21 @@ export interface RadioProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string
   name: string
 }
+
+export interface SpinnerProps {
+  size?: 'sm' | 'md' | 'lg'
+  color?: string
+}
+
+export interface SwitchProps {
+  color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
+  options: [string, string] | [string, string, string]
+  initialOption?: string
+  onChange?: (selectedOption: string) => void
+}
+
+export interface ToggleSwitchProps extends InputHTMLAttributes<HTMLInputElement> {
+  align?: 'left' | 'right'
+  color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
+  label?: string
+}

@@ -1,10 +1,7 @@
 import React, { FC } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-interface SpinnerProps {
-  size?: 'sm' | 'md' | 'lg'
-  color?: string
-}
+import { SpinnerProps } from '@/src/components/types'
 
 export const Spinner: FC<SpinnerProps> = ({ size = 'sm', color = 'border-slate-500' }) => {
   let spinnerSize

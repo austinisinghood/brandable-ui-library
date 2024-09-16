@@ -3,22 +3,17 @@
 import { FC, useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-type Option = string
-
-interface SwitchProps {
-  options: [Option, Option] | [Option, Option, Option]
-  initialOption?: Option
-  onChange?: (selectedOption: Option) => void
-}
+import { SwitchProps } from '@/src/components/types'
 
 export const Switch: FC<SwitchProps> = ({
+  color = 'primary',
   options = ['Option1', 'Option2', 'Option3'],
   initialOption = 'Option1',
   onChange,
 }) => {
-  const [selectedOption, setSelectedOption] = useState<Option>(initialOption)
+  const [selectedOption, setSelectedOption] = useState<string>(initialOption)
 
-  const handleOptionChange = (option: Option) => {
+  const handleOptionChange = (option: string) => {
     setSelectedOption(option)
     if (onChange) onChange(option)
   }
@@ -28,7 +23,7 @@ export const Switch: FC<SwitchProps> = ({
   const selectedIndex = options.indexOf(selectedOption)
 
   return (
-    <div className="switch-container">
+    <div className={twMerge(`switch-container`, color)}>
       <div className="switch-wrapper">
         {options.map((option, index) => (
           <div

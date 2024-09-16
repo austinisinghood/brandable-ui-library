@@ -6,47 +6,184 @@
     border-radius: 0;
   }
 
-  .textarea-container {
+  .textarea-wrapper {
     margin: 10px 0;
     display: flex;
     flex-direction: column;
 
     .label {
       font-size: 1rem;
-      color: theme('colors.primary');
       margin: 0 6px 6px 6px;
     }
 
     .textarea {
       height: 200px;
-      background-color: theme('colors.paper-light');
       padding: 0.25rem 0.5rem 0.3rem 0.5rem;
-      border: 2px solid theme('colors.primary-light');
-      border-radius: 8px;
+      border-radius: 12px;
       transition: border-color 0.3s, box-shadow 0.3s, transform 0.1s ease;
       cursor: text;
       resize: none;
 
       &:hover {
-        border: 2px solid theme('colors.accent');
       }
 
       &:active,
       &:focus {
-        border: 2px solid theme('colors.accent-dark');
-        background-color: theme('colors.tertiary-light');
         outline: none;
       }
     }
 
     .helper-text {
-      margin: 6px 0 0 6px;
-      color: theme('colors.primary');
+      margin-top: 5px;
     }
 
     .required-message {
-      margin: 6px 0 0 6px;
+      margin-top: 5px;
+    }
+  }
+  // Primary
+  .textarea-wrapper.primary {
+    .label {
       color: theme('colors.primary');
+    }
+    .textarea {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.primary-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.primary');
+    }
+    .required-message {
+      color: theme('colors.primary');
+    }
+  }
+  // Secondary
+  .textarea-wrapper.secondary {
+    .label {
+      color: theme('colors.secondary');
+    }
+    .textarea {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.secondary-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.secondary');
+    }
+    .required-message {
+      color: theme('colors.secondary');
+    }
+  }
+  // Tertiary
+  .textarea-wrapper.tertiary {
+    .label {
+      color: theme('colors.tertiary');
+    }
+    .textarea {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.tertiary-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.tertiary');
+    }
+    .required-message {
+      color: theme('colors.tertiary');
+    }
+  }
+  // Accent
+  .textarea-wrapper.accent {
+    .label {
+      color: theme('colors.accent');
+    }
+    .textarea {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.accent-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.accent');
+    }
+    .required-message {
+      color: theme('colors.accent');
+    }
+  }
+  // Ink
+  .textarea-wrapper.ink {
+    .label {
+      color: theme('colors.ink');
+    }
+    .textarea {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.ink-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.ink');
+    }
+    .required-message {
+      color: theme('colors.ink');
+    }
+  }
+  // Paper
+  .textarea-wrapper.paper {
+    .label {
+      color: theme('colors.paper-light');
+    }
+    .textarea {
+      color: theme('colors.paper-light');
+      background-color: theme('colors.ink');
+      border: 2px solid theme('colors.paper-light');
+      &:hover {
+        border: 2px solid theme('colors.paper-light');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.ink-dark');
+      }
+    }
+    .helper-text {
+      color: theme('colors.paper-light');
+    }
+    .required-message {
+      color: theme('colors.paper-light');
     }
   }
 }
