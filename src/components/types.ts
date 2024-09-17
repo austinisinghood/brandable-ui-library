@@ -22,6 +22,13 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: 'outlined' | 'solid' | 'ghost'
 }
 
+export interface CardProps {
+  align?: 'left' | 'center' | 'right'
+  color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
+  children: React.ReactNode
+  width?: number
+}
+
 export interface CarouselProps {
   color: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
   iconLeft?: React.ReactNode
