@@ -128,21 +128,24 @@
       color: theme('colors.accent');
     }
     .dropdown-button {
-      background-color: theme('colors.paper-light');
+      background-color: theme('colors.ink');
+      color: theme('colors.accent-light');
       border: 2px solid theme('colors.accent');
       &:hover {
         border: 2px solid theme('colors.accent');
       }
 
       &.active {
-        background-color: theme('colors.paper');
+        background-color: theme('colors.ink');
+        color: theme('colors.accent-light');
       }
     }
     .dropdown-list {
-      background-color: theme('colors.paper-light');
+      background-color: theme('colors.ink');
 
       .dropdown-item {
-        background-color: theme('colors.paper-light');
+        background-color: theme('colors.ink');
+        color: theme('colors.accent-light');
 
         &:hover {
           background-color: theme('colors.accent-light');
