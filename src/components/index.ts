@@ -2,6 +2,7 @@
 
 export { Accordion } from './Organisms/Accordion/Accordion'
 export { Button } from './Atoms/Button/Button'
+export { Carousel } from './Organisms/Carousel/Carousel'
 export { Checkbox } from './Atoms/Checkbox/Checkbox'
 export { Dropdown } from './Atoms/Dropdown/Dropdown'
 export { Input } from './Atoms/Input/Input'

@@ -22,6 +22,15 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: 'outlined' | 'solid' | 'ghost'
 }
 
+export interface CarouselProps {
+  color: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
+  iconLeft?: React.ReactNode
+  iconRight?: React.ReactNode
+  images: string[]
+  autoSlide?: boolean
+  slideInterval?: number
+}
+
 export interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   className?: string
   color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'

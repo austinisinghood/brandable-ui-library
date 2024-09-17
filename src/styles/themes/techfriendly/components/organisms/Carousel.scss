@@ -1,0 +1,171 @@
+.techfriendly-theme-wrapper {
+  // Primary
+  .carousel-wrapper.primary {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.primary-dark'), transparent);
+      opacity: 0.75;
+    }
+    .indicator {
+      background-color: theme('colors.paper-light');
+    }
+    .indicator:hover {
+      background-color: theme('colors.accent-light');
+    }
+    .indicator.active {
+      background-color: theme('colors.accent');
+      opacity: 1;
+    }
+    .arrow {
+      background-color: theme('colors.accent');
+      .icon {
+        color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Secondary
+  .carousel-wrapper.secondary {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.secondary-dark'), transparent);
+      opacity: 0.75;
+    }
+    .indicator {
+      background-color: theme('colors.paper-light');
+    }
+    .indicator:hover {
+      background-color: theme('colors.accent-light');
+    }
+    .indicator.active {
+      background-color: theme('colors.accent');
+      opacity: 1;
+    }
+    .arrow {
+      background-color: theme('colors.accent');
+      .icon {
+        color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Tertiary
+  .carousel-wrapper.tertiary {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.tertiary-dark'), transparent);
+      opacity: 0.75;
+    }
+    .indicator {
+      background-color: theme('colors.paper-light');
+    }
+    .indicator:hover {
+      background-color: theme('colors.accent-light');
+    }
+    .indicator.active {
+      background-color: theme('colors.accent');
+      opacity: 1;
+    }
+    .arrow {
+      background-color: theme('colors.accent');
+      .icon {
+        color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Accent
+  .carousel-wrapper.accent {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.accent'), transparent);
+      opacity: 0.75;
+    }
+    .indicator {
+      background-color: theme('colors.paper-light');
+    }
+    .indicator:hover {
+      background-color: theme('colors.accent-light');
+    }
+    .indicator.active {
+      background-color: theme('colors.paper-light');
+      opacity: 1;
+    }
+    .arrow {
+      background-color: theme('colors.paper-light');
+      .icon {
+        color: theme('colors.accent');
+      }
+    }
+  }
+  // Ink
+  .carousel-wrapper.ink {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.ink-dark'), transparent);
+      opacity: 0.9;
+    }
+    .indicator {
+      background-color: theme('colors.paper-light');
+    }
+    .indicator:hover {
+      background-color: theme('colors.accent-light');
+    }
+    .indicator.active {
+      background-color: theme('colors.accent');
+      opacity: 1;
+    }
+    .arrow {
+      background-color: theme('colors.paper-light');
+      .icon {
+        color: theme('colors.ink');
+      }
+    }
+  }
+
+  // Paper
+  .carousel-wrapper.paper {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.paper-dark'), transparent);
+      opacity: 0.9;
+    }
+    .indicator {
+      background-color: theme('colors.ink');
+    }
+    .indicator:hover {
+      background-color: theme('colors.accent-light');
+    }
+    .indicator.active {
+      background-color: theme('colors.accent');
+      opacity: 1;
+    }
+    .arrow {
+      background-color: theme('colors.ink-dark');
+      .icon {
+        color: theme('colors.paper-light');
+      }
+    }
+  }
+
+  // Defaults
+  .carousel-wrapper {
+    border-radius: 16px;
+    .carousel-overlay {
+    }
+    .indicator {
+      width: 15px;
+      height: 15px;
+      opacity: 0.75;
+      border-radius: 9999px;
+      transition: all 0.3s;
+    }
+    .indicator:hover {
+      opacity: 1;
+    }
+    .arrow {
+      width: fit-content;
+      height: fit-content;
+      padding: 6px;
+      opacity: 0.75;
+      border-radius: 9999px;
+      transition: all 0.3s;
+      .icon {
+      }
+    }
+    .arrow:hover {
+      opacity: 1;
+    }
+  }
+}
