@@ -9,12 +9,7 @@ const meta: Meta<typeof Carousel> = {
     color: 'primary',
     iconLeft: <FaCaretLeft className="text-xl" />,
     iconRight: <FaCaretRight className="text-xl" />,
-    images: [
-      'https://images.unsplash.com/photo-1722648404139-fcebc9e9f2d4?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      'https://images.unsplash.com/photo-1722648404162-394d24498f1d?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      'https://images.unsplash.com/photo-1722648404036-09f11bfcf2cb?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    ],
-    // color: 'primary',
+    images: ['/river.jpg', '/sunset.jpg', '/snow.jpg'],
     autoSlide: false,
     slideInterval: 3000,
   },
