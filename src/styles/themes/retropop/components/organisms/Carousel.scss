@@ -1,0 +1,149 @@
+.retropop-theme-wrapper {
+  // Primary
+  .carousel-wrapper.primary {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.primary-dark'), transparent);
+      opacity: 0.75;
+    }
+    .indicator {
+      background-color: theme('colors.paper-light');
+    }
+    .indicator.active {
+      background-color: theme('colors.paper-light');
+      opacity: 1;
+    }
+    .arrow {
+      .icon {
+        color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Secondary
+  .carousel-wrapper.secondary {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.secondary-dark'), transparent);
+      opacity: 0.75;
+    }
+    .indicator {
+      background-color: theme('colors.paper-light');
+    }
+    .indicator.active {
+      background-color: theme('colors.paper-light');
+      opacity: 1;
+    }
+    .arrow {
+      .icon {
+        color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Tertiary
+  .carousel-wrapper.tertiary {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.tertiary-dark'), transparent);
+      opacity: 0.9;
+    }
+    .indicator {
+      background-color: theme('colors.paper-light');
+    }
+    .indicator.active {
+      background-color: theme('colors.paper-light');
+      opacity: 1;
+    }
+    .arrow {
+      .icon {
+        color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Accent
+  .carousel-wrapper.accent {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.ink-dark'), transparent);
+      opacity: 0.9;
+    }
+    .indicator {
+      background-color: theme('colors.accent-light');
+    }
+    .indicator:hover {
+      opacity: 1;
+    }
+    .indicator.active {
+      background-color: theme('colors.accent');
+      opacity: 1;
+    }
+    .arrow {
+      .icon {
+        color: theme('colors.accent');
+      }
+    }
+  }
+  // Ink
+  .carousel-wrapper.ink {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.ink-dark'), transparent);
+      opacity: 0.9;
+    }
+    .indicator {
+      background-color: theme('colors.paper-light');
+    }
+    .indicator.active {
+      background-color: theme('colors.paper-light');
+      opacity: 1;
+    }
+    .arrow {
+      .icon {
+        color: theme('colors.paper-light');
+      }
+    }
+  }
+
+  // Paper
+  .carousel-wrapper.paper {
+    .carousel-overlay {
+      background-image: linear-gradient(to top, theme('colors.paper-dark'), transparent);
+      opacity: 0.75;
+    }
+    .indicator {
+      background-color: theme('colors.ink-dark');
+    }
+    .indicator.active {
+      background-color: theme('colors.ink-dark');
+      opacity: 1;
+    }
+    .arrow {
+      .icon {
+        color: theme('colors.ink-dark');
+      }
+    }
+  }
+
+  // Defaults
+  .carousel-wrapper {
+    border-radius: 3px;
+    .carousel-overlay {
+    }
+    .indicator {
+      width: 10px;
+      height: 10px;
+      opacity: 0.5;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .indicator:hover {
+      opacity: 1;
+    }
+    .arrow {
+      width: fit-content;
+      height: fit-content;
+      opacity: 0.5;
+      border-radius: 3px;
+      transition: all 0.3s;
+      .icon {
+      }
+    }
+    .arrow:hover {
+      opacity: 1;
+    }
+  }
+}

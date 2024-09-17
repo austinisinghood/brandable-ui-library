@@ -5,7 +5,7 @@ import '../src/styles/globals.scss'
 import '../src/styles/themes/default/theme.scss'
 import '../src/styles/themes/techfriendly/theme.scss'
 
-const MyThemes = ['default', 'techfriendly'] as const
+const MyThemes = ['default', 'retropop', 'techfriendly'] as const
 
 const preview: Preview = {
   decorators: [
@@ -34,7 +34,7 @@ const preview: Preview = {
       toolbar: {
         title: 'Theme',
         icon: 'paintbrush',
-        items: ['default', 'techfriendly'],
+        items: ['default', 'retropop', 'techfriendly'],
         dynamicTitle: true,
       },
     },

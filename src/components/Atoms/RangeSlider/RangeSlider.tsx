@@ -43,12 +43,20 @@ export const RangeSlider: FC<RangeSliderProps> = ({
   }
 
   return (
-    <div className={twMerge(`rangeslider-container`, color)}>
+    <div
+      className={twMerge(`rangeslider-container`, color)}
+      role="group"
+      aria-labelledby="range-slider-label"
+    >
+      <div id="range-slider-label" className="sr-only">
+        Range Slider
+      </div>
       <div className="rangeslider-wrapper">
         <label htmlFor="min-range" className="sr-only">
           Minimum value
         </label>
         <input
+          id="min-range"
           className="range-input"
           type="range"
           value={minValue}
@@ -56,12 +64,16 @@ export const RangeSlider: FC<RangeSliderProps> = ({
           max={max}
           step={step}
           onChange={handleMinChange}
-          aria-label="Minimum range value"
+          aria-valuemin={min}
+          aria-valuemax={max}
+          aria-valuenow={minValue}
+          aria-valuetext={`Minimum value: ${minValue}`}
         />
         <label htmlFor="max-range" className="sr-only">
           Maximum value
         </label>
         <input
+          id="max-range"
           className="range-input"
           type="range"
           value={maxValue}
@@ -69,10 +81,13 @@ export const RangeSlider: FC<RangeSliderProps> = ({
           max={max}
           step={step}
           onChange={handleMaxChange}
-          aria-label="Maximum range value"
+          aria-valuemin={min}
+          aria-valuemax={max}
+          aria-valuenow={maxValue}
+          aria-valuetext={`Maximum value: ${maxValue}`}
         />
       </div>
-      <div className="range-control-wrapper">
+      <div className="range-control-wrapper" aria-hidden="true">
         <div className="range-control" style={{ left: `${minPos}%` }}>
           <div className="range-control-indicator talk">{minValue}</div>
         </div>

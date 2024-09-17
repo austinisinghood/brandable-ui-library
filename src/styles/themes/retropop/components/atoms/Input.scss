@@ -1,0 +1,188 @@
+.retropop-theme-wrapper {
+  // Primary
+  .input-wrapper.primary {
+    .label {
+      color: theme('colors.primary');
+    }
+    .text-input {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.primary-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.primary');
+    }
+    .required-message {
+      color: theme('colors.primary');
+    }
+  }
+  // Secondary
+  .input-wrapper.secondary {
+    .label {
+      color: theme('colors.secondary');
+    }
+    .text-input {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.secondary-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.secondary');
+    }
+    .required-message {
+      color: theme('colors.secondary');
+    }
+  }
+  // Tertiary
+  .input-wrapper.tertiary {
+    .label {
+      color: theme('colors.tertiary');
+    }
+    .text-input {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.tertiary-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.tertiary');
+    }
+    .required-message {
+      color: theme('colors.tertiary');
+    }
+  }
+  // Accent
+  .input-wrapper.accent {
+    .label {
+      color: theme('colors.accent');
+    }
+    .text-input {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.accent-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.accent');
+    }
+    .required-message {
+      color: theme('colors.accent');
+    }
+  }
+  // Ink
+  .input-wrapper.ink {
+    .label {
+      color: theme('colors.ink');
+    }
+    .text-input {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.ink-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.ink');
+    }
+    .required-message {
+      color: theme('colors.ink');
+    }
+  }
+  // Paper
+  .input-wrapper.paper {
+    .label {
+      color: theme('colors.paper');
+    }
+    .text-input {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper-light');
+      &:hover {
+        border: 2px solid theme('colors.ink-dark');
+      }
+
+      &:active,
+      &:focus {
+        background-color: theme('colors.paper');
+      }
+    }
+    .helper-text {
+      color: theme('colors.paper');
+    }
+    .required-message {
+      color: theme('colors.paper');
+    }
+  }
+
+  // Defaults
+  .text-input {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .input-wrapper {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+
+    .label {
+      font-size: 1rem;
+      margin: 0 6px;
+    }
+
+    .text-input {
+      padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+      border-radius: 3px;
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.1s ease;
+      cursor: text;
+
+      &:hover {
+      }
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .helper-text {
+      margin-top: 5px;
+    }
+
+    .required-message {
+      margin-top: 5px;
+    }
+  }
+}

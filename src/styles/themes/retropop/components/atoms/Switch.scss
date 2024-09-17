@@ -1,0 +1,176 @@
+.retropop-theme-wrapper {
+  // Primary
+  .switch.primary {
+    .label {
+      color: theme('colors.primary');
+    }
+    .switch-container {
+      background-color: theme('colors.primary');
+      .switch-wrapper {
+        background-color: theme('colors.primary');
+      }
+      .switch-option {
+        color: theme('colors.paper-light');
+      }
+      .switch-option.selected {
+        color: theme('colors.primary');
+      }
+      .switch-highlight {
+        background-color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Secondary
+  .switch.secondary {
+    .label {
+      color: theme('colors.secondary');
+    }
+    .switch-container {
+      background-color: theme('colors.secondary');
+      .switch-wrapper {
+        background-color: theme('colors.secondary');
+      }
+      .switch-option {
+        color: theme('colors.paper-light');
+      }
+      .switch-option.selected {
+        color: theme('colors.secondary');
+      }
+      .switch-highlight {
+        background-color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Tertiary
+  .switch.tertiary {
+    .label {
+      color: theme('colors.tertiary');
+    }
+    .switch-container {
+      background-color: theme('colors.tertiary');
+      .switch-wrapper {
+        background-color: theme('colors.tertiary');
+      }
+      .switch-option {
+        color: theme('colors.paper-light');
+      }
+      .switch-option.selected {
+        color: theme('colors.tertiary');
+      }
+      .switch-highlight {
+        background-color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Accent
+  .switch.accent {
+    .label {
+      color: theme('colors.accent');
+    }
+    .switch-container {
+      background-color: theme('colors.accent');
+      .switch-wrapper {
+        background-color: theme('colors.accent');
+      }
+      .switch-option {
+        color: theme('colors.ink');
+      }
+      .switch-option.selected {
+        color: theme('colors.ink');
+      }
+      .switch-highlight {
+        background-color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Ink
+  .switch.ink {
+    .label {
+      color: theme('colors.ink');
+    }
+    .switch-container {
+      background-color: theme('colors.ink');
+      .switch-wrapper {
+        background-color: theme('colors.ink');
+      }
+      .switch-option {
+        color: theme('colors.paper-light');
+      }
+      .switch-option.selected {
+        color: theme('colors.ink');
+      }
+      .switch-highlight {
+        background-color: theme('colors.paper-light');
+      }
+    }
+  }
+  // Paper
+  .switch.paper {
+    .label {
+      color: theme('colors.paper');
+    }
+    .switch-container {
+      background-color: theme('colors.paper');
+      .switch-wrapper {
+        background-color: theme('colors.paper');
+      }
+      .switch-option {
+        color: theme('colors.ink');
+      }
+      .switch-option.selected {
+        color: theme('colors.paper');
+      }
+      .switch-highlight {
+        background-color: theme('colors.ink');
+      }
+    }
+  }
+
+  // Defaults
+  .switch {
+    .label {
+      width: 100%;
+      font-size: 1rem;
+      margin: 0;
+      text-align: center;
+    }
+    .switch-container {
+      width: 100%;
+      max-width: 300px;
+      height: fit-content;
+      padding: 6px;
+      border-radius: 6px;
+      .switch-wrapper {
+        display: flex;
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 3px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .switch-option {
+        flex: 1;
+        text-align: center;
+        padding: 4px 16px;
+        z-index: 1;
+        transition: color 0.4s ease;
+      }
+
+      .switch-option.selected {
+      }
+
+      .switch-highlight {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 33.33%;
+        height: 100%;
+        border-radius: 3px;
+        transition: transform 0.4s ease;
+        z-index: 0;
+      }
+    }
+  }
+}

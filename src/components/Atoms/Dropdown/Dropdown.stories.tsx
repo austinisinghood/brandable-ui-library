@@ -6,6 +6,7 @@ import { FaCaretDown } from 'react-icons/fa'
 const meta: Meta<typeof Dropdown> = {
   component: Dropdown,
   args: {
+    color: 'primary',
     className: '',
     icon: <FaCaretDown className="text-base" />,
     label: 'Test Label',

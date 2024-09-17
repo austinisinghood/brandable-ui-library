@@ -1,6 +1,7 @@
 // Components
 
 export { Accordion } from './Organisms/Accordion/Accordion'
+export { Badge } from './Atoms/Badge/Badge'
 export { Button } from './Atoms/Button/Button'
 export { Card } from './Molecules/Card/Card'
 export { Carousel } from './Organisms/Carousel/Carousel'
@@ -16,4 +17,5 @@ export { Switch } from './Atoms/Switch/Switch'
 
 // Themes
 import '../styles/themes/default/theme.scss'
+import '../styles/themes/retropop/theme.scss'
 import '../styles/themes/techfriendly/theme.scss'

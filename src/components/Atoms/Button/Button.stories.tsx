@@ -48,9 +48,6 @@ export const Variants: Story = {
           <Button color="primary" size="lg" variant="solid">
             Primary
           </Button>
-          <Button color="primary" size="lg" variant="solid" full>
-            Primary
-          </Button>
         </div>
         <div className="w-full flex flex-row space-x-2 px-2">
           <label className="chat text-ink">Outlined</label>
@@ -63,9 +60,6 @@ export const Variants: Story = {
             Primary
           </Button>
           <Button color="primary" size="lg" variant="outlined">
-            Primary
-          </Button>
-          <Button color="primary" size="lg" variant="outlined" full>
             Primary
           </Button>
         </div>
@@ -91,9 +85,6 @@ export const Variants: Story = {
           <Button color="secondary" size="lg" variant="solid">
             Secondary
           </Button>
-          <Button color="secondary" size="lg" variant="solid" full>
-            Secondary
-          </Button>
         </div>
         <div className="w-full flex flex-row space-x-2 px-2">
           <label className="chat text-ink">Outlined</label>
@@ -106,9 +97,6 @@ export const Variants: Story = {
             Secondary
           </Button>
           <Button color="secondary" size="lg" variant="outlined">
-            Secondary
-          </Button>
-          <Button color="secondary" size="lg" variant="outlined" full>
             Secondary
           </Button>
         </div>
@@ -134,9 +122,6 @@ export const Variants: Story = {
           <Button color="tertiary" size="lg" variant="solid">
             Tertiary
           </Button>
-          <Button color="tertiary" size="lg" variant="solid" full>
-            Tertiary
-          </Button>
         </div>
         <div className="w-full flex flex-row space-x-2 px-2">
           <label className="chat text-ink">Outlined</label>
@@ -151,10 +136,7 @@ export const Variants: Story = {
           <Button color="tertiary" size="lg" variant="outlined">
             Tertiary
           </Button>
-          <Button color="tertiary" size="lg" variant="outlined" full>
-            Tertiary
-          </Button>
-        </div>{' '}
+        </div>
         <div className="w-full pt-6">
           <hr className="w-full border-ink" />
         </div>
@@ -177,9 +159,6 @@ export const Variants: Story = {
           <Button color="accent" size="lg" variant="solid">
             Accent
           </Button>
-          <Button color="accent" size="lg" variant="solid" full>
-            Accent
-          </Button>
         </div>
         <div className="w-full flex flex-row space-x-2 px-2">
           <label className="chat text-ink">Outlined</label>
@@ -192,9 +171,6 @@ export const Variants: Story = {
             Accent
           </Button>
           <Button color="accent" size="lg" variant="outlined">
-            Accent
-          </Button>
-          <Button color="accent" size="lg" variant="outlined" full>
             Accent
           </Button>
         </div>
@@ -220,9 +196,6 @@ export const Variants: Story = {
           <Button color="ink" size="lg" variant="solid">
             Ink
           </Button>
-          <Button color="ink" size="lg" variant="solid" full>
-            Ink
-          </Button>
         </div>
         <div className="w-full flex flex-row space-x-2 px-2">
           <label className="chat text-ink">Outlined</label>
@@ -235,9 +208,6 @@ export const Variants: Story = {
             Ink
           </Button>
           <Button color="ink" size="lg" variant="outlined">
-            Ink
-          </Button>
-          <Button color="ink" size="lg" variant="outlined" full>
             Ink
           </Button>
         </div>
@@ -263,9 +233,6 @@ export const Variants: Story = {
           <Button color="paper" size="lg" variant="solid">
             Paper
           </Button>
-          <Button color="paper" size="lg" variant="solid" full>
-            Paper
-          </Button>
         </div>
         <div className="w-full flex flex-row space-x-2 px-2">
           <label className="chat text-paper-light">Outlined</label>
@@ -278,9 +245,6 @@ export const Variants: Story = {
             Paper
           </Button>
           <Button color="paper" size="lg" variant="outlined">
-            Paper
-          </Button>
-          <Button color="paper" size="lg" variant="outlined" full>
             Paper
           </Button>
         </div>

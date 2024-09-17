@@ -16,7 +16,7 @@ export const Button: FC<ButtonProps> = ({
   const isFullWidth = full ? 'full-width' : ''
 
   return (
-    <div className={twMerge(`button-wrapper`, className, isFullWidth)}>
+    <div className={twMerge(`button-wrapper`, size, isFullWidth, className)}>
       <button className={twMerge(`button-text`, size, color, variant, isFullWidth)} {...rest}>
         {children}
       </button>

@@ -1,0 +1,60 @@
+.retropop-theme-wrapper {
+  // Primary
+  .card-container.primary {
+    color: theme('colors.paper-light');
+    background-color: theme('colors.primary-light');
+  }
+  // Secondary
+  .card-container.secondary {
+    color: theme('colors.ink');
+    background-color: theme('colors.secondary-light');
+  }
+  // Tertiary
+  .card-container.tertiary {
+    color: theme('colors.paper-light');
+    background-color: theme('colors.tertiary');
+  }
+  // Accent
+  .card-container.accent {
+    color: theme('colors.ink');
+    background-color: theme('colors.accent-light');
+  }
+  // Ink
+  .card-container.ink {
+    color: theme('colors.paper-light');
+    background-color: theme('colors.ink-dark');
+  }
+  // Paper
+  .card-container.paper {
+    color: theme('colors.ink');
+    background-color: theme('colors.paper-light');
+  }
+
+  // Left alignment
+  .card-container {
+    .card-wrapper.left {
+      justify-content: flex-start;
+    }
+  }
+  // Center alignment
+  .card-container {
+    .card-wrapper.center {
+      justify-content: center;
+    }
+  }
+  // Right alignment
+  .card-container {
+    .card-wrapper.right {
+      justify-content: flex-end;
+    }
+  }
+  // Default
+  .card-container {
+    margin: 0 0 16px 0;
+    padding: 16px 16px 24px 16px;
+    border-radius: 3px;
+    box-shadow: theme('boxShadow.card');
+    .card-wrapper {
+    }
+  }
+}

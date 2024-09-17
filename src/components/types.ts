@@ -13,6 +13,14 @@ export type PanelProps = {
   content: React.ReactNode
 }
 
+export interface BadgeProps {
+  children: React.ReactNode
+  className?: string
+  color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
+  size?: 'sm' | 'md' | 'lg'
+  variant?: 'solid' | 'outlined'
+}
+
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode
   className?: string

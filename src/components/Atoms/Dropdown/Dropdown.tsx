@@ -67,7 +67,7 @@ export const Dropdown: FC<DropdownProps> = ({
 
   return (
     <div className={twMerge(`dropdown-container relative w-full`, color)}>
-      <label htmlFor={name} className="label label-text">
+      <label id={`${name}-label`} htmlFor={name} className="label label-text">
         {label}
       </label>
       <div className={twMerge('dropdown-wrapper relative z-20', className)}>
@@ -80,7 +80,7 @@ export const Dropdown: FC<DropdownProps> = ({
           onClick={() => setIsOpen(!isOpen)}
           aria-haspopup="listbox"
           aria-expanded={isOpen}
-          aria-labelledby={name}
+          aria-labelledby={`${name}-label`}
           onKeyDown={handleKeyDown}
         >
           <span>{selectedOption.label || 'Select an option'}</span>
@@ -89,6 +89,7 @@ export const Dropdown: FC<DropdownProps> = ({
               `transition-all duration-300 ease-in-out`,
               isOpen ? 'rotate-180' : '',
             )}
+            aria-hidden="true"
           >
             {icon ? icon : <FaChevronDown className="text-xl" />}
           </div>
@@ -100,12 +101,13 @@ export const Dropdown: FC<DropdownProps> = ({
               isOpen && 'opacity-100 h-auto',
             )}
             role="listbox"
+            aria-labelledby={`${name}-label`}
             aria-activedescendant={
               focusedOptionIndex !== null
                 ? `option-${options[focusedOptionIndex].value}`
                 : undefined
             }
-            tabIndex={0}
+            tabIndex={-1}
             onKeyDown={handleKeyDown}
           >
             {options.map((option, index) => (
@@ -120,7 +122,6 @@ export const Dropdown: FC<DropdownProps> = ({
                 onClick={() => handleSelect(option)}
                 role="option"
                 aria-selected={option.value === selectedOption.value}
-                tabIndex={-1}
               >
                 {option.label}
               </li>
@@ -128,8 +129,16 @@ export const Dropdown: FC<DropdownProps> = ({
           </ul>
         )}
       </div>
-      {rest.title && <div className="helper-text whisper">{rest.title}</div>}
-      {isRequired && <div className="required-message whisper">{isRequired}</div>}
+      {rest.title && (
+        <div className="helper-text whisper" id={`${name}-helper`}>
+          {rest.title}
+        </div>
+      )}
+      {isRequired && (
+        <div className="required-message whisper" id={`${name}-required`}>
+          {isRequired}
+        </div>
+      )}
     </div>
   )
 }

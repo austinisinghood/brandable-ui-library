@@ -1,0 +1,26 @@
+// Tailwind immports
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Theme imports
+@import './components.scss';
+@import './fonts.scss';
+@import '../../globals.scss';
+@import './typography.scss';
+@import './variables.scss';
+
+.retropop-theme-wrapper {
+  /* Selection */
+  ::selection {
+    background-color: theme('colors.accent');
+    color: theme('colors.ink');
+  }
+
+  /* HTML, body */
+  html,
+  body {
+    color: theme('colors.ink');
+    background-color: theme('colors.paper-light');
+  }
+}

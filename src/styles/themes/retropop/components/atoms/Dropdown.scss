@@ -1,0 +1,304 @@
+.retropop-theme-wrapper {
+  // Primary
+  .dropdown-container.primary {
+    .label {
+      color: theme('colors.primary');
+    }
+    .dropdown-button {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.primary');
+      &:hover {
+        border: 2px solid theme('colors.primary');
+      }
+
+      &.active {
+        background-color: theme('colors.paper');
+      }
+    }
+    .dropdown-list {
+      background-color: theme('colors.paper-light');
+
+      .dropdown-item {
+        background-color: theme('colors.paper-light');
+
+        &:hover {
+          background-color: theme('colors.primary-light');
+          color: theme('colors.paper-light');
+        }
+
+        &.active {
+          background-color: theme('colors.primary');
+          color: theme('colors.paper-light');
+        }
+      }
+    }
+    .helper-text {
+      color: theme('colors.primary');
+    }
+
+    .required-message {
+      color: theme('colors.primary');
+    }
+  }
+  // Secondary
+  .dropdown-container.secondary {
+    .label {
+      color: theme('colors.secondary');
+    }
+    .dropdown-button {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.secondary');
+      &:hover {
+        border: 2px solid theme('colors.secondary');
+      }
+
+      &.active {
+        background-color: theme('colors.paper');
+      }
+    }
+    .dropdown-list {
+      background-color: theme('colors.paper-light');
+
+      .dropdown-item {
+        background-color: theme('colors.paper-light');
+
+        &:hover {
+          background-color: theme('colors.secondary-light');
+          color: theme('colors.paper-light');
+        }
+
+        &.active {
+          background-color: theme('colors.secondary');
+          color: theme('colors.paper-light');
+        }
+      }
+    }
+    .helper-text {
+      color: theme('colors.secondary');
+    }
+
+    .required-message {
+      color: theme('colors.secondary');
+    }
+  }
+  // Tertiary
+  .dropdown-container.tertiary {
+    .label {
+      color: theme('colors.tertiary');
+    }
+    .dropdown-button {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.tertiary');
+      &:hover {
+        border: 2px solid theme('colors.tertiary');
+      }
+
+      &.active {
+        background-color: theme('colors.paper');
+      }
+    }
+    .dropdown-list {
+      background-color: theme('colors.paper-light');
+
+      .dropdown-item {
+        background-color: theme('colors.paper-light');
+
+        &:hover {
+          background-color: theme('colors.tertiary-light');
+          color: theme('colors.paper-light');
+        }
+
+        &.active {
+          background-color: theme('colors.tertiary');
+          color: theme('colors.paper-light');
+        }
+      }
+    }
+    .helper-text {
+      color: theme('colors.tertiary');
+    }
+
+    .required-message {
+      color: theme('colors.tertiary');
+    }
+  }
+  // Accent
+  .dropdown-container.accent {
+    .label {
+      color: theme('colors.accent');
+    }
+    .dropdown-button {
+      background-color: theme('colors.ink');
+      color: theme('colors.accent-light');
+      border: 2px solid theme('colors.accent');
+      &:hover {
+        border: 2px solid theme('colors.accent');
+      }
+
+      &.active {
+        background-color: theme('colors.ink');
+        color: theme('colors.accent-light');
+      }
+    }
+    .dropdown-list {
+      background-color: theme('colors.ink');
+
+      .dropdown-item {
+        background-color: theme('colors.ink');
+        color: theme('colors.accent-light');
+
+        &:hover {
+          background-color: theme('colors.accent-light');
+          color: theme('colors.ink');
+        }
+
+        &.active {
+          background-color: theme('colors.accent');
+          color: theme('colors.ink');
+        }
+      }
+    }
+    .helper-text {
+      color: theme('colors.accent');
+    }
+
+    .required-message {
+      color: theme('colors.accent');
+    }
+  }
+  // Ink
+  .dropdown-container.ink {
+    .label {
+      color: theme('colors.ink');
+    }
+    .dropdown-button {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.ink');
+      &:hover {
+        border: 2px solid theme('colors.ink');
+      }
+
+      &.active {
+        background-color: theme('colors.paper');
+      }
+    }
+    .dropdown-list {
+      background-color: theme('colors.paper-light');
+
+      .dropdown-item {
+        background-color: theme('colors.paper-light');
+
+        &:hover {
+          background-color: theme('colors.ink-light');
+          color: theme('colors.paper-light');
+        }
+
+        &.active {
+          background-color: theme('colors.ink');
+          color: theme('colors.paper-light');
+        }
+      }
+    }
+    .helper-text {
+      color: theme('colors.ink');
+    }
+
+    .required-message {
+      color: theme('colors.ink');
+    }
+  }
+  // Paper
+  .dropdown-container.paper {
+    .label {
+      color: theme('colors.paper');
+    }
+    .dropdown-button {
+      background-color: theme('colors.paper-light');
+      border: 2px solid theme('colors.paper');
+      &:hover {
+        border: 2px solid theme('colors.paper');
+      }
+
+      &.active {
+        background-color: theme('colors.paper');
+      }
+    }
+    .dropdown-list {
+      background-color: theme('colors.paper-light');
+
+      .dropdown-item {
+        background-color: theme('colors.paper-light');
+
+        &:hover {
+          background-color: theme('colors.paper');
+          color: theme('colors.ink');
+        }
+
+        &.active {
+          background-color: theme('colors.paper-dark');
+          color: theme('colors.ink');
+        }
+      }
+    }
+    .helper-text {
+      color: theme('colors.paper-light');
+    }
+
+    .required-message {
+      color: theme('colors.paper-light');
+    }
+  }
+  // Defaults
+  .dropdown-container {
+    .label {
+      font-size: 1rem;
+      margin: 6px;
+    }
+
+    .dropdown-wrapper {
+      .dropdown-button {
+        padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+        border-radius: 3px;
+
+        &:hover {
+        }
+
+        &.active {
+          outline: none;
+        }
+      }
+
+      .dropdown-list {
+        width: 99.8%;
+        margin: 0 auto;
+        overflow-y: scroll;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 3px 3px;
+
+        .dropdown-item {
+          padding: 0.25rem 1.5rem 0.3rem 1.5rem;
+
+          &:hover {
+          }
+
+          &.active {
+          }
+        }
+        .dropdown-item:first-child {
+          border-radius: 0px;
+        }
+        .dropdown-item:last-child {
+          border-radius: 0 0 3px 3px;
+        }
+      }
+    }
+
+    .helper-text {
+      padding-top: 5px;
+    }
+
+    .required-message {
+      padding-top: 5px;
+    }
+  }
+}

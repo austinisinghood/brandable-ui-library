@@ -1,0 +1,83 @@
+.techfriendly-theme-wrapper {
+  .badge-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    opacity: 0.75;
+    border-radius: 9999px;
+
+    &.badge-sm {
+      padding: 3px 12px;
+      font-size: 10px;
+    }
+
+    &.badge-md {
+      padding: 3px 14px;
+      font-size: 12px;
+    }
+
+    &.badge-lg {
+      padding: 3px 16px;
+      font-size: 14px;
+    }
+
+    &.badge-solid {
+      &.badge-primary {
+        color: theme('colors.paper-light');
+        background-color: theme('colors.primary');
+      }
+      &.badge-secondary {
+        color: theme('colors.ink');
+        background-color: theme('colors.secondary');
+      }
+      &.badge-tertiary {
+        color: theme('colors.paper-light');
+        background-color: theme('colors.tertiary');
+      }
+      &.badge-accent {
+        color: theme('colors.ink');
+        background-color: theme('colors.accent');
+      }
+      &.badge-ink {
+        color: theme('colors.paper-light');
+        background-color: theme('colors.ink');
+      }
+      &.badge-paper {
+        color: theme('colors.ink');
+        background-color: theme('colors.paper-light');
+      }
+    }
+
+    &.badge-outlined {
+      background-color: transparent;
+      border-width: 1px;
+      border-style: solid;
+
+      &.badge-primary {
+        color: theme('colors.primary');
+        border-color: theme('colors.primary');
+      }
+      &.badge-secondary {
+        color: theme('colors.secondary');
+        border-color: theme('colors.secondary');
+      }
+      &.badge-tertiary {
+        color: theme('colors.tertiary');
+        border-color: theme('colors.tertiary');
+      }
+      &.badge-accent {
+        color: theme('colors.accent');
+        border-color: theme('colors.accent');
+      }
+      &.badge-ink {
+        color: theme('colors.ink');
+        border-color: theme('colors.ink');
+      }
+      &.badge-paper {
+        color: theme('colors.paper');
+        border-color: theme('colors.paper');
+      }
+    }
+  }
+}
