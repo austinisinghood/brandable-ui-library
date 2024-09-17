@@ -46,6 +46,7 @@ export interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export interface DropdownProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'onSelect'> {
+  color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'ink' | 'paper'
   className?: string
   icon?: React.ReactNode
   label?: string

@@ -61,16 +61,15 @@ export const Variants: Story = {
     return (
       <div className="w-full flex flex-col space-y-2">
         <h1 className="w-full roar text-ink px-2 py-12">Dropdown</h1>
+        {/* Primary */}
         <div className="w-full flex flex-col space-y-2 p-6">
           <div className="w-full flex flex-row space-x-2 px-2">
-            <h3 className="shout text-ink pb-4">Default Dropdown</h3>
-          </div>
-          <div className="w-full flex flex-row space-x-2 px-2">
-            <label className="chat text-ink">Dropdown</label>
+            <h3 className="shout text-ink pb-4">Primary Dropdown</h3>
           </div>
           <div className="w-full flex flex-row space-x-2 px-2 pb-4">
             <Dropdown
               {...args}
+              color="primary"
               selectedOption={selectedOption}
               onSelect={handleSelect}
               title="Select an option"
@@ -78,6 +77,93 @@ export const Variants: Story = {
           </div>
           <div className="w-full pt-6">
             <hr className="w-full border-ink" />
+          </div>
+        </div>
+        {/* Secondary Input */}
+        <div className="w-full flex flex-col space-y-2 p-6">
+          <div className="w-full flex flex-row space-x-2 px-2">
+            <h3 className="shout text-ink pb-4">Secondary Dropdown</h3>
+          </div>
+          <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+            <Dropdown
+              {...args}
+              color="secondary"
+              selectedOption={selectedOption}
+              onSelect={handleSelect}
+              title="Select an option"
+            />
+          </div>
+          <div className="w-full pt-6">
+            <hr className="w-full border-ink" />
+          </div>
+        </div>
+        {/* Tertiary */}
+        <div className="w-full flex flex-col space-y-2 p-6">
+          <div className="w-full flex flex-row space-x-2 px-2">
+            <h3 className="shout text-ink pb-4">Tertiary Dropdown</h3>
+          </div>
+          <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+            <Dropdown
+              {...args}
+              color="tertiary"
+              selectedOption={selectedOption}
+              onSelect={handleSelect}
+              title="Select an option"
+            />
+          </div>
+          <div className="w-full pt-6">
+            <hr className="w-full border-ink" />
+          </div>
+        </div>
+        {/* Accent */}
+        <div className="w-full flex flex-col space-y-2 p-6">
+          <div className="w-full flex flex-row space-x-2 px-2">
+            <h3 className="shout text-ink pb-4">Accent Dropdown</h3>
+          </div>
+          <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+            <Dropdown
+              {...args}
+              color="accent"
+              selectedOption={selectedOption}
+              onSelect={handleSelect}
+              title="Select an option"
+            />
+          </div>
+          <div className="w-full pt-6">
+            <hr className="w-full border-ink" />
+          </div>
+        </div>
+        {/* Ink */}
+        <div className="w-full flex flex-col space-y-2 p-6">
+          <div className="w-full flex flex-row space-x-2 px-2">
+            <h3 className="shout text-ink pb-4">Ink Dropdown</h3>
+          </div>
+          <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+            <Dropdown
+              {...args}
+              color="ink"
+              selectedOption={selectedOption}
+              onSelect={handleSelect}
+              title="Select an option"
+            />
+          </div>
+          <div className="w-full pt-6">
+            <hr className="w-full border-ink" />
+          </div>
+        </div>
+        {/* Paper */}
+        <div className="w-full flex flex-col space-y-2 bg-ink p-6">
+          <div className="w-full flex flex-row space-x-2 px-2">
+            <h3 className="shout text-paper-light pb-4">Paper Dropdown</h3>
+          </div>
+          <div className="w-full flex flex-row space-x-2 px-2 pb-4">
+            <Dropdown
+              {...args}
+              color="paper"
+              selectedOption={selectedOption}
+              onSelect={handleSelect}
+              title="Select an option"
+            />
           </div>
         </div>
       </div>

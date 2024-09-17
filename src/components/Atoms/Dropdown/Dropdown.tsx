@@ -4,6 +4,7 @@ import { FaChevronDown } from 'react-icons/fa6'
 import { DropdownProps } from '@/src/components/types'
 
 export const Dropdown: FC<DropdownProps> = ({
+  color,
   className,
   icon,
   label,
@@ -65,7 +66,7 @@ export const Dropdown: FC<DropdownProps> = ({
   }, [])
 
   return (
-    <div className="dropdown-container relative w-full">
+    <div className={twMerge(`dropdown-container relative w-full`, color)}>
       <label htmlFor={name} className="label label-text">
         {label}
       </label>
